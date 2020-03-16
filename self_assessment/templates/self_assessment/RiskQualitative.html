@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Parte 5 - Domanda 2
+{% endblock %}
+
+{% block content %}
+
+    {% comment %}<p>
+        Per piacere, rispondi alle seguenti domande:
+    </p>{% endcomment %}
+
+    <p> Quanto sei disposto a correre dei rischi? </p>
+
+    <p> Come prima, indica la tua risposta utilizzando una scala da 0 a 10, dove 0 significa che sei “per niente disposto a correre rischi” e 10 significa che seì “completamente disposto a correre rischi”. Puoi utilizzare anche un qualsiasi numero tra 0 e 10 per indicare dove ti trovi in questa scala. La risposta a questa domanda non influenza il tuo guadagno nell'esperimento.</p>
+
+    {% formfields %}
+
+    {% next_button %}
+
+{% endblock %}
