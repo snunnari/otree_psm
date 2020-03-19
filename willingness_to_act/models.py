@@ -12,6 +12,7 @@ class Constants(BaseConstants):
     # Levels of scale for willingness to act
     willingness_scale = ['Completely unwilling to do so', 'Very willing to do so']
     levels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+    interval = range(1, 10)
 
 
 class Subsession(BaseSubsession):

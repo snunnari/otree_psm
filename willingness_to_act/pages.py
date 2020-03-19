@@ -12,6 +12,7 @@ class WillingnessToAct(Page):
         return dict(
             willingness_scale=Constants.willingness_scale,
             levels=Constants.levels,
+            interval=Constants.interval,
         )
 
 

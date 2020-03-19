@@ -27,14 +27,15 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/willingness_to_act/static/css" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/self_assessment/templates/self_assessment" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment\templates\self_assessment" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\css" />
     </key>
   </component>
@@ -52,10 +53,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="124" key="SettingsEditor" timestamp="1584612100320">
+    <state x="345" y="140" key="#Notifications" timestamp="1584625211875">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584612100320" />
+    <state x="345" y="140" key="#Notifications/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625211875" />
+    <state x="533" y="236" key="FileChooserDialogImpl" timestamp="1584625278716">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="533" y="236" key="FileChooserDialogImpl/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625278716" />
+    <state x="254" y="124" key="SettingsEditor" timestamp="1584625286404">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584546939636" />
   </component>
 </project>
