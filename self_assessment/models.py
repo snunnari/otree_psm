@@ -9,6 +9,9 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
+    # Levels of scale for self-assessment
+    levels = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
 
 class Subsession(BaseSubsession):
     pass
@@ -17,11 +20,36 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     pass
 
+
 class Player(BasePlayer):
 
-    risk_qual = models.StringField(
-        choices=['0 - Per niente disposto a correre rischi', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10 - Completamente disposto a correre rischi'],
-        label='',
-        widget=widgets.RadioSelect)
+    favor_return = models.StringField(
+            choices=[
+                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
+                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
+            ],
+            label="""
+            When someone does me a favor I am willing to return it. 
+            """,
+            widget=widgets.RadioSelect)
 
+    unjust_revenge = models.StringField(
+            choices=[
+                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
+                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
+            ],
+            label="""
+            If I am treated very unjustly, I will take revenge at the first occasion, 
+            even if there is a cost to do so.  
+            """,
+            widget=widgets.RadioSelect)
 
+    people_best_intent = models.StringField(
+            choices=[
+                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
+                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
+            ],
+            label="""
+            I assume that people have only the best intentions. 
+            """,
+            widget=widgets.RadioSelect)

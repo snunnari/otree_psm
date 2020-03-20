@@ -3,11 +3,17 @@ from otree.api import Currency as c, currency_range
 from ._builtin import Page, WaitPage
 from .models import Constants
 
-class RiskQualitative(Page):
+
+class SelfAssessment(Page):
     form_model = 'player'
-    form_fields = ['risk_qual']
+    form_fields = ['favor_return', 'unjust_revenge', 'people_best_intent']
+
+    def vars_for_template(self):
+        return dict(
+            levels=Constants.levels,
+        )
 
 
 page_sequence = [
-    RiskQualitative
+    SelfAssessment,
 ]

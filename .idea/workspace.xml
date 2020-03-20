@@ -1,7 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="" />
+    <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/auth/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/auth/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/contenttypes/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/contenttypes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/gps_qual_it/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/gps_qual_it/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl_time/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl_time/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl_time_2/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/icl_time_2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/mpl/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/mpl/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/otree-version.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/otree/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/otree/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/self_assessment/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/self_assessment/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/sessions/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/sessions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0002_auto_20200318_1701.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0003_auto_20200318_2106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0004_auto_20200318_2106.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0005_auto_20200318_2117.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0006_auto_20200318_2118.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0007_auto_20200318_2118.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0008_player_willingness_shish.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0009_auto_20200319_1046.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0010_auto_20200319_1046.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0011_auto_20200319_1048.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0012_auto_20200319_1050.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0013_auto_20200319_1051.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/0014_auto_20200319_1054.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/__temp_migrations/willingness_to_act/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskQualitative.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +66,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZGWplUm8XQXMb5UGasrg26Ys1M" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,16 +80,17 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/self_assessment/templates/self_assessment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/self_assessment" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment\templates\self_assessment" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -66,5 +120,9 @@
     </state>
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584546939636" />
+    <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584706277322">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1504.963@0.0.1504.963" timestamp="1584706277322" />
   </component>
 </project>

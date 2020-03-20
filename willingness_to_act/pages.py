@@ -10,9 +10,7 @@ class WillingnessToAct(Page):
 
     def vars_for_template(self):
         return dict(
-            willingness_scale=Constants.willingness_scale,
             levels=Constants.levels,
-            interval=Constants.interval,
         )
 
 

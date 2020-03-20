@@ -91,6 +91,7 @@ p {
     padding: .5rem;
     vertical-align: inherit; /* from the sassy css */
     border-top: 1px solid #dee2e6;
+
     }
 
 .table thead th {
@@ -103,12 +104,12 @@ p {
     text-align:start;
     font-size: small;
     border-left-style:hidden;
-    max-width: 50px;
+    max-width:50px;
     padding-left:0.1rem;
     }
 
 .scale-right {
-    text-align: end;
+    text-align:end;
     font-size: small;
     max-width:50px;
     padding-right:0.1rem;
