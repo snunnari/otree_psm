@@ -15,44 +15,38 @@
 {# *** TITLE *** #}
 {# ****************************************************************************************************************** #}
 {% block title %}
-    Parte 4 - Domande 2-6
-{#    {% trans "Instructions" %}#}
+    Risk Aversion: Staircase Method
 {% endblock %}
 
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
-{#  I deleted this sentence from second blocktrans:                                                                    #}
-{#      The lottery gives you a {{ p_hi }} chance of receiving {{ hi }} and a {{ p_lo }} chance of receiving {{ lo }}. #}
-{#  I deleted this sentence from third blocktrans:                                                                     #}
-{#      After completing all {{ n }} choices, one of the choices will be randomly picked to determine your payoff. #}
 {# ****************************************************************************************************************** #}
 
 {% block content %}
 
     <div class="wrapper instructions">
         <p>
-            {% blocktrans trimmed with p_hi=p_hi hi=hi p_lo=p_lo lo=lo %}
-                In the following, you can choose between a sure payment and a lottery.
-            {% endblocktrans %}
+            Please imagine the following situation.
+            You can choose between a sure payment of a particular amount of money, or a draw,
+            where you would have an equal chance of getting amount x or getting nothing.
+
             {% blocktrans trimmed with n=Constants.num_choices %}
-                We will present to you {{ n }} different choices.
-                While the lottery is the same in all choices,
-                the sure payment will differ in every choice.
+            We will present to you {{ n }} different situations.
+            What would you prefer: a draw with a 50 percent chance of receiving amount x,
+            and the same 50 percent chance of receiving nothing,
+            or the amount of y as a sure payment?
             {% endblocktrans %}
         </p>
-        <p>
-            {% blocktrans trimmed with n=Constants.num_choices %}
-                If you chose the lottery, a random draw will determine whether the high or low outcome will
-                constitute your payoff; otherwise, the sure payment will constitute your payoff.
-            {% endblocktrans %}
-        </p>
-        <p>
+
+<!--        <p>
             {% blocktrans trimmed with conversionrate=Constants.conversionrate %}
                 We will convert Experimental Euros to Euros using the rate {{ conversionrate }} Experimental Euros = 1 Euro.
             {% endblocktrans %}
         </p>
+-->
     </div>
 
     {% next_button %}
+
 {% endblock %}

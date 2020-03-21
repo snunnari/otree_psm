@@ -2,16 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__temp_migrations/self_assessment/0002_player_risk_assessment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__temp_migrations/self_assessment/0003_auto_20200320_1435.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/altruism_hypothetical/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/altruism_hypothetical/0002_player_altruism.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/altruism_hypothetical/0003_auto_20200321_1916.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/altruism_hypothetical/0004_auto_20200321_1917.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/altruism_hypothetical/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/reciprocity_hypothetical/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/reciprocity_hypothetical/0002_player_reciprocity_hypothetical.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/reciprocity_hypothetical/0003_auto_20200321_1901.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__temp_migrations/reciprocity_hypothetical/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reciprocity_hypothetical/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/icl/pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self_assessment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self_assessment/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +71,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/self_assessment/templates/self_assessment" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\reciprocity_hypothetical\static\reciprocity_hypothetical\css" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment\templates\self_assessment" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -79,36 +103,44 @@
       <option name="project" value="LOCAL" />
       <updated>1584706513674</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Risk Assessment (qualitative)">
+      <created>1584783766947</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584783766947</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed .css for WillingnessToAct module&#10;Programmed SelfAssessment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed .css for WillingnessToAct module&#10;Programmed SelfAssessment" />
+    <MESSAGE value="Risk Assessment (qualitative)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Risk Assessment (qualitative)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="140" key="#Notifications" timestamp="1584625211875">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="345" y="140" key="#Notifications/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625211875" />
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1584706510891">
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1584783764572">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1584706510891" />
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1584783764572" />
     <state x="533" y="236" key="FileChooserDialogImpl" timestamp="1584625278716">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="533" y="236" key="FileChooserDialogImpl/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625278716" />
-    <state x="254" y="124" key="SettingsEditor" timestamp="1584625286404">
+    <state x="254" y="124" key="SettingsEditor" timestamp="1584811772394">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
-    <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584546939636" />
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1584706972274">
+    <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584811772394" />
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1584783772852">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1584706972274" />
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1584783772852" />
     <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584711827809">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

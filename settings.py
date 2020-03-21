@@ -49,6 +49,18 @@ SESSION_CONFIGS = [
         'num_demo_participants': 1,
         'app_sequence': ['icl_time_2'],
     },
+    {
+        'name': 'reciprocity_hypothetical',
+        'display_name': "Positive Reciprocity Hypothetical Question",
+        'num_demo_participants': 1,
+        'app_sequence': ['reciprocity_hypothetical'],
+    },
+    {
+        'name': 'altruism_hypothetical',
+        'display_name': "Altruism Hypothetical Question",
+        'num_demo_participants': 1,
+        'app_sequence': ['altruism_hypothetical'],
+    },
 ]
 
 
