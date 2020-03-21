@@ -53,3 +53,13 @@ class Player(BasePlayer):
             I assume that people have only the best intentions. 
             """,
             widget=widgets.RadioSelect)
+
+    risk_assessment = models.StringField(
+            choices=[
+                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
+                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
+            ],
+            label="""
+            In general, how willing or unwilling are you to take risks?
+            """,
+            widget=widgets.RadioSelect)

@@ -14,6 +14,17 @@ class SelfAssessment(Page):
         )
 
 
+class RiskAssessment(Page):
+    form_model = 'player'
+    form_fields = ['risk_assessment']
+
+    def vars_for_template(self):
+        return dict(
+            levels=Constants.levels,
+        )
+
+
 page_sequence = [
     SelfAssessment,
+    RiskAssessment
 ]

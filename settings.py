@@ -12,17 +12,18 @@ SESSION_CONFIG_DEFAULTS = {
 }
 
 SESSION_CONFIGS = [
-    {
-        'name': 'self_assessment',
-        'display_name': "Self-Assessment Questions",
-        'num_demo_participants': 1,
-        'app_sequence': ['self_assessment'],
-    },
+
     {
         'name': 'willingness_to_act',
         'display_name': "Willingness-To-Act Questions",
         'num_demo_participants': 1,
         'app_sequence': ['willingness_to_act'],
+    },
+{
+        'name': 'self_assessment',
+        'display_name': "Self-Assessment Questions",
+        'num_demo_participants': 1,
+        'app_sequence': ['self_assessment'],
     },
     {
         'name': 'icl',
