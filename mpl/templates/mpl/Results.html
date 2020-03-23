@@ -18,11 +18,6 @@
     {% if Constants.small_pies == True or Constants.large_pies == True %}
         <script>
             num_choices = {{ Constants.num_choices|json }};
-            lottery_a_hi = "{{ lottery_a_hi }}";
-            lottery_a_lo = "{{ lottery_a_lo }}";
-            lottery_b_hi = "{{ lottery_b_hi }}";
-            lottery_b_lo = "{{ lottery_b_lo }}";
-
             one_choice = "{{ Constants.one_choice_per_page }}";
             percentage = "{{ Constants.percentage }}";
             large_pies = "{{ Constants.large_pies }}";
@@ -59,7 +54,7 @@
         <!-- Choice To Pay: Large Pies -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
         {% if Constants.one_choice_per_page == True and Constants.large_pies == True %}
-
+<!--
             <div class="card">
                 <table class="table">
                     <thead>
@@ -116,6 +111,7 @@
                     </tbody>
                 </table>
             </div>
+-->
 
 
         <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -127,69 +123,52 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="header">
-                            {% if Constants.small_pies == True %}
-                                <th class="pie-chart"></th>
-                            {% endif %}
-                            <th class="lottery-a">{% trans "Option A" %}</th>
+                            <th class="lottery">{% trans "Lottery" %}</th>
                             <th class="formfield"></th>
-                            <th class="lottery-b">{% trans "Option B" %}</th>
-                            {% if Constants.small_pies == True %}
-                                <th class="pie-chart"></th>
-                            {% endif %}
+                            <th class="formfield"></th>
+                            <th class="safe-payment">{% trans "Safe Payment" %}</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        {% for i,f,p in choice_to_pay %}
+                        {% for i,f,p,s in choice_to_pay %}
                             <tr>
-                                <!-- pie charts for A lotteries -->
-                                {% if Constants.small_pies == True %}
-                                    <td class="pie-chart">
-                                        {% with j=i|stringformat:"s" %}
-                                            {% with pies_a="pie_a_"|add:j %}
-                                                <div id="{{ pies_a }}" class="pie-chart"></div>
-                                            {% endwith %}
-                                        {% endwith %}
-                                    </td>
-                                {% endif %}
-
                                 <!-- A lotteries -->
-                                <td class="lottery-a">
-                                    {{ lottery_a_hi }} {% trans "with a probability of " %}{{ p }},<br/>
-                                    {{ lottery_a_lo }} {% trans "otherwise" %}
+                                <td class="lottery">
+                                    {{ p }} Chance to win {{ lottery_hi }} {{ currency }}<br/>
+                                    and <br/>
+                                    {{ p }} Chance to win {{ lottery_lo }} {{ currency }}
                                 </td>
 
                                 <!-- radio select form fields -->
+
+                                {% if option_to_pay == 'A' %}
                                 <td class="formfield">
-                                    {% if option_to_pay == 'A' %}
-                                        <div class="controls">
-                                            <input type="radio" style="pointer-events: none;" checked="checked">
-                                            <input type="radio" style="pointer-events: none;">
-                                        </div>
+                                    <div class="controls">
+                                        <input type="radio" style="pointer-events: none;" checked="checked">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="controls">
+                                        <input type="radio" style="pointer-events: none;">
+                                    </div>
+                                </td>
                                     {% elif option_to_pay == 'B' %}
-                                        <div class="controls">
-                                            <input type="radio" style="pointer-events: none;">
-                                            <input type="radio" style="pointer-events: none;" checked="checked">
-                                        </div>
+                                <td class="formfield">
+                                    <div class="controls">
+                                        <input type="radio" style="pointer-events: none;">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="controls">
+                                        <input type="radio" style="pointer-events: none;" checked="checked">
+                                    </div>
+                                </td>
                                     {% endif %}
+                                <!-- Safe payment -->
+                                <td class="safe-payment">
+                                    {{ s }} {{ currency }} <br/>
                                 </td>
-
-                                <!-- B lotteries -->
-                                <td class="lottery-b">
-                                    {{ lottery_b_hi }} {% trans "with a probability of " %}{{ p }},<br/>
-                                    {{ lottery_b_lo }} {% trans "otherwise" %}
-                                </td>
-
-                                <!-- pie charts for B lotteries -->
-                                {% if Constants.small_pies == True %}
-                                    <td class="pie-chart">
-                                        {% with j=i|stringformat:"s" %}
-                                        {% with pies_b="pie_b_"|add:j %}
-                                            <div id="{{ pies_b }}" class="pie-chart"></div>
-                                        {% endwith %}
-                                        {% endwith %}
-                                    </td>
-                                {% endif %}
                             </tr>
                         {% endfor %}
                     </tbody>
@@ -203,11 +182,11 @@
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <div class="card info">
             <p>
-                {% blocktrans trimmed with option_to_pay=option_to_pay %}
-                    As indicated above, you decided to opt for option {{ option_to_pay }} in this decision.
+                As indicated above, you decided to opt for the {{ option_chosen }} in this decision.
+                {% if option_to_pay == 'A' %}
                     For the chosen option, one of the two possible outcomes has been randomly realized based
                     on the corresponding probabilities.
-                {% endblocktrans %}
+                {% endif %}
             </p>
             <p>
                 {% blocktrans trimmed with payoff=payoff %}

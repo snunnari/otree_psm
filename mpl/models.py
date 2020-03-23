@@ -32,16 +32,27 @@ class Subsession(BaseSubsession):
 
                 # create list of probabilities
                 # ----------------------------------------------------------------------------------------------------
+                list_probabilities = [5 for j in range(n + 1)]
+
                 if Constants.percentage:
                     probabilities = [
-                        "{0:.2f}".format(k / n * 100) + "%"
-                        for k in indices
+                        str(pr) + "0%"
+                        for pr in list_probabilities
                     ]
                 else:
                     probabilities = [
-                        str(k) + "/" + str(n)
-                        for k in indices
+                        str(pr)
+                        for pr in list_probabilities
                     ]
+
+                # create list of safe payments
+                safe_payment = 0
+                list_safe_payments = [safe_payment]
+                for j in range(n + 1):
+                    safe_payment += 10
+                    list_safe_payments.append(safe_payment)
+
+                p.participant.vars['list_safe_payments'] = list_safe_payments
 
                 # create list corresponding to form_field variables including all choices
                 # ----------------------------------------------------------------------------------------------------
@@ -50,7 +61,7 @@ class Subsession(BaseSubsession):
                 # create list of choices
                 # ----------------------------------------------------------------------------------------------------
                 p.participant.vars['mpl_choices'] = list(
-                    zip(indices, form_fields, probabilities)
+                    zip(indices, form_fields, probabilities, list_safe_payments)
                 )
 
                 # randomly determine index/choice of binary decision to pay
@@ -121,15 +132,14 @@ class Player(BasePlayer):
         # set player's payoff
         # ------------------------------------------------------------------------------------------------------------
         if self.option_to_pay == 'A':
+            self.participant.vars['option_chosen'] = 'Lottery'
             if self.random_draw <= self.participant.vars['mpl_index_to_pay']:
-                self.payoff = Constants.lottery_a_hi
+                self.payoff = Constants.lottery_hi
             else:
-                self.payoff = Constants.lottery_a_lo
+                self.payoff = Constants.lottery_lo
         else:
-            if self.random_draw <= self.participant.vars['mpl_index_to_pay']:
-                self.payoff = Constants.lottery_b_hi
-            else:
-                self.payoff = Constants.lottery_b_lo
+            self.participant.vars['option_chosen'] = 'Safe Payment'
+            self.payoff = self.participant.vars['list_safe_payments'][self.participant.vars['mpl_index_to_pay'] - 1]
 
         # set payoff as global variable
         # ------------------------------------------------------------------------------------------------------------

@@ -19,11 +19,6 @@
     {% if Constants.small_pies == True or Constants.large_pies == True %}
         <script>
             num_choices = {{ Constants.num_choices|json }};
-            lottery_a_hi = "{{ lottery_a_hi }}";
-            lottery_a_lo = "{{ lottery_a_lo }}";
-            lottery_b_hi = "{{ lottery_b_hi }}";
-            lottery_b_lo = "{{ lottery_b_lo }}";
-
             one_choice = "{{ Constants.one_choice_per_page }}";
             percentage = "{{ Constants.percentage }}";
             large_pies = "{{ Constants.large_pies }}";
@@ -131,60 +126,41 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="header">
-                            {% if Constants.small_pies == True %}
+                            <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
-                            {% endif %}
-                            <th class="lottery-a">{% trans "Option A" %}</th>
+                            {% endif %} -->
+                            <th class="lottery">{% trans "Lottery" %}</th>
                             <th class="formfield"></th>
-                            <th class="lottery-b">{% trans "Option B" %}</th>
-                            {% if Constants.small_pies == True %}
+                            <th class="formfield"></th>
+                            <th class="safe-payment">{% trans "Safe Payment" %}</th>
+                            <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
-                            {% endif %}
+                            {% endif %}-->
                         </tr>
                     </thead>
 
                     <tbody>
-                        {% for i,f,p in choices %}
+                        {% for i,f,p,s in choices %}
                             <tr>
-                                <!-- pie charts for A lotteries -->
-                                {% if Constants.small_pies == True %}
-                                    <td class="pie-chart">
-                                        {% with j=i|stringformat:"s" %}
-                                            {% with pies_a="pie_a_"|add:j %}
-                                                <div id="{{ pies_a }}" class="pie-chart"></div>
-                                            {% endwith %}
-                                        {% endwith %}
-                                    </td>
-                                {% endif %}
-
-                                <!-- A lotteries -->
-                                <td class="lottery-a">
-                                    {{ lottery_a_hi }} {% trans "with a probability of " %}{{ p }},<br/>
-                                    {{ lottery_a_lo }} {% trans "otherwise" %}
+                                <!-- Lottery -->
+                                <td class="lottery">
+                                    {{ p }} Chance to win {{ lottery_hi }} {{ currency }}<br/>
+                                    and <br/>
+                                    {{ p }} Chance to win {{ lottery_lo }} {{ currency }}
                                 </td>
 
                                 <!-- radio select form fields -->
                                 <td class="formfield">
                                     <input type="radio" name="{{ f }}" value="A" required>
+                                </td>
+                                <td>
                                     <input type="radio" name="{{ f }}" value="B" required>
                                 </td>
 
-                                <!-- B lotteries -->
-                                <td class="lottery-b">
-                                    {{ lottery_b_hi }} {% trans "with a probability of " %}{{ p }},<br/>
-                                    {{ lottery_b_lo }} {% trans "otherwise" %}
+                                <!-- Safe Payments -->
+                                <td class="safe-payment">
+                                    {{ s }} {{ currency }} <br/>
                                 </td>
-
-                                <!-- pie charts for B lotteries -->
-                                {% if Constants.small_pies == True %}
-                                    <td class="pie-chart">
-                                        {% with j=i|stringformat:"s" %}
-                                        {% with pies_b="pie_b_"|add:j %}
-                                            <div id="{{ pies_b }}" class="pie-chart"></div>
-                                        {% endwith %}
-                                        {% endwith %}
-                                    </td>
-                                {% endif %}
                             </tr>
                         {% endfor %}
                     </tbody>

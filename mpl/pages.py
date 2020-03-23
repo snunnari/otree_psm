@@ -8,10 +8,10 @@ from .models import Constants
 # --------------------------------------------------------------------------------------------------------------------
 def vars_for_all_templates(self):
     return {
-        'lottery_a_lo': c(Constants.lottery_a_lo),
-        'lottery_a_hi': c(Constants.lottery_a_hi),
-        'lottery_b_lo': c(Constants.lottery_b_lo),
-        'lottery_b_hi': c(Constants.lottery_b_hi)
+        'lottery_lo': Constants.lottery_lo,
+        'lottery_hi': Constants.lottery_hi,
+        'safe_payment': Constants.safe_payment,
+        'currency': Constants.currency
     }
 
 
@@ -74,7 +74,7 @@ class Decision(Page):
             }
         else:
             return {
-                'choices':   self.player.participant.vars['mpl_choices']
+                'choices':   self.player.participant.vars['mpl_choices'],
             }
 
     # set player's payoff
@@ -160,7 +160,8 @@ class Results(Page):
             return {
                 'choice_to_pay':  [choice_to_pay],
                 'option_to_pay':  self.player.option_to_pay,
-                'payoff':         self.player.payoff
+                'payoff':         self.player.payoff,
+                'option_chosen': self.participant.vars['option_chosen']
             }
 
 

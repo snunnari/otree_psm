@@ -79,13 +79,13 @@ h2 {
     text-align: center;
 }
 
-.lottery-a {
-    min-width: 160px;
+.lottery {
+    min-width: 300px;
     text-align: right;
 }
 
-.lottery-b {
-    min-width: 160px;
+.safe-payment {
+    min-width: 300px;
     text-align: left;
 }
 
@@ -107,7 +107,9 @@ h2 {
 }
 
 input[type="radio"]{
-    margin: 7px;
+    margin: 0px;
+    margin-left:25px;
+    margin-right:25px;
 }
 
 .panel {
