@@ -52,6 +52,7 @@ class Subsession(BaseSubsession):
                     safe_payment += 10
                     list_safe_payments.append(safe_payment)
 
+                # save list of safe payments for determining payoff
                 p.participant.vars['list_safe_payments'] = list_safe_payments
 
                 # create list corresponding to form_field variables including all choices
