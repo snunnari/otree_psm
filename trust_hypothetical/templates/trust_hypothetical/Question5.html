@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    Question 5
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+<p>
+    Finally, a different question:
+    assume you were in the position of the other person and had to decide which amount to transfer.
+    Which amount would you transfer?
+</p>
+
+    {% formfields %}
+</div>
+
+    {% next_button %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    Question 1
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper">
+<p>
+    Assume that the other person transfers {{ other_transfer }} Euro to your account.
+    After the first step you have {{ endowment }}+{{ rate }}*{{ other_transfer }} Euro = {{ final_endowment }} Euro,
+    the other person has {{ endowment }}-{{ other_transfer }} Euro = {{ other_endowment }} Euro.
+    Which amount do you transfer back?
+</p>
+
+    {% formfields %}
+</div>
+
+    {% next_button %}
+
+{% endblock %}

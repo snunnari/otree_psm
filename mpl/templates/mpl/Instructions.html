@@ -26,33 +26,51 @@
 
     <div class="wrapper instructions">
         <p>
-            {% blocktrans trimmed with lottery_hi=lottery_hi%}
-            Now you can choose between a safe payment and a lottery.
+            {% blocktrans trimmed with n=num_choices %}
+            On the following screen you will see {{ n }} hypothetical scenarios.
+            In each scenario you can choose between a lottery and a safe payment.
             The lottery is as follows:
-            There is a 50 percent chance to get {{ lottery_hi }} Euro, and a 50 Percent chance to get nothing.
-            The safe option differs from scenario to scenario.
+            There is a {{ probability }} chance to get €{{ lottery_hi }}, and a {{ probability }} chance to get nothing.
+
+            The safe payment increases from scenario to scenario.
+            Its value is €0 in the first scenario, €10 in the second, €20 in the third, and so on.
+            In the last scenario, the value is €300.
             {% endblocktrans %}
         </p>
+
+        {% if enforce_consistency %}
         <p>
-            {% blocktrans trimmed with n=num_choices %}
-            On the following screen you will see {{ n }} scenarios.
-            For each of these hypothetical scenarios we will ask you to choose between the lottery and the safe payment.
-            We will now give you an overview over all the scenarios.
-            {% endblocktrans %}
+            Since the safe payment gets better and better in each scenario,
+            you should switch from the lottery to the safe payment only once.
+            This means that, if in a certain scenario you accept the safe payment, then you should accept the safe payment
+            also in the subsequent scenarios.
+            Likewise, it means that you should accept the lottery in all the preceding scenarios.
+            In other words, the scenario in which you accept the safe payment will mark
+            the point where you stop to accept the lottery and you begin to accept the safe payment.
         </p>
         <p>
-            Please indicate whether you choose the lottery or the safe payment.
+            To simplify your task, you will only have to select the point in which you switch your selection
+            from the lottery to the safe payment. To do this, you only need to click on the safe payment
+            in the scenario in which you want to switch, and click on the lottery in the scenario before that.
+            Mind that you can revise your decision for as long as you want before submitting it.
+            That is, you can change the switching point until you are satisfied.
         </p>
+
+        {% else %}
+        <p>
+            Please, for each scenario, indicate whether you choose the lottery or the safe payment.
+        </p>
+
+        {% endif %}
 
         <p>
             {% blocktrans trimmed with n=num_choices %}
-                After you have made all of your choices, one of the {{ n }} decisions will be randomly chosen for
+                After you have submitted your decision, one of the {{ n }} scenarios will be randomly chosen for
                 your payment.
-                If, at the randomly chosen decision, you chose the lottery option, your payoff will be determined according
-                to the corresponding probabilities.
+                If, at the randomly chosen scenario, you chose the lottery option, your payoff will be determined according
+                to the corresponding probabilities. Otherwise, you will earn the safe payment.
             {% endblocktrans %}
         </p>
-
 
     </div>
 

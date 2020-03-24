@@ -61,6 +61,12 @@ SESSION_CONFIGS = [
         'num_demo_participants': 1,
         'app_sequence': ['altruism_hypothetical'],
     },
+    {
+        'name': 'trust_hypothetical',
+        'display_name': "Trust Hypothetical Questions",
+        'num_demo_participants': 1,
+        'app_sequence': ['trust_hypothetical'],
+    },
 ]
 
 

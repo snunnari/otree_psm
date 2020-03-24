@@ -144,9 +144,8 @@
                             <tr>
                                 <!-- Lottery -->
                                 <td class="lottery">
-                                    {{ p }} Chance to win {{ lottery_hi }} {{ currency }}<br/>
-                                    and <br/>
-                                    {{ p }} Chance to win {{ lottery_lo }} {{ currency }}
+                                    {{ p }} chance to win €{{ lottery_hi }}<br/>
+                                    {{ p }} chance to win €{{ lottery_lo }}
                                 </td>
 
                                 <!-- radio select form fields -->
@@ -159,7 +158,7 @@
 
                                 <!-- Safe Payments -->
                                 <td class="safe-payment">
-                                    {{ s }} {{ currency }} <br/>
+                                    €{{ s }} <br/>
                                 </td>
                             </tr>
                         {% endfor %}

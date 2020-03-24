@@ -45,7 +45,7 @@
 
         <div class="card info">
             {% blocktrans trimmed %}
-                Decision {{ index_to_pay }} was randomly chosen for your payment:
+                Scenario {{ index_to_pay }} was randomly chosen for your payment:
             {% endblocktrans %}
         </div>
         <br/>
@@ -135,9 +135,8 @@
                             <tr>
                                 <!-- A lotteries -->
                                 <td class="lottery">
-                                    {{ p }} Chance to win {{ lottery_hi }} {{ currency }}<br/>
-                                    and <br/>
-                                    {{ p }} Chance to win {{ lottery_lo }} {{ currency }}
+                                    {{ p }} chance to win €{{ lottery_hi }}<br/>
+                                    {{ p }} chance to win €{{ lottery_lo }}
                                 </td>
 
                                 <!-- radio select form fields -->
@@ -167,7 +166,7 @@
                                     {% endif %}
                                 <!-- Safe payment -->
                                 <td class="safe-payment">
-                                    {{ s }} {{ currency }} <br/>
+                                    €{{ s }} <br/>
                                 </td>
                             </tr>
                         {% endfor %}
@@ -182,10 +181,9 @@
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <div class="card info">
             <p>
-                As indicated above, in this decision you opted for the {{ option_chosen }}.
+                As indicated above, in this scenario you opted for the {{ option_chosen }}.
                 {% if option_to_pay == 'A' %}
-                    For this Lottery, one of the two possible outcomes has been realized based
-                    on the corresponding probabilities.
+                    One of the two possible outcomes has been realized based on the corresponding probabilities.
                 {% endif %}
             </p>
             <p>

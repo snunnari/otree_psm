@@ -44,6 +44,7 @@ class Subsession(BaseSubsession):
                         str(pr) + '/2'
                         for pr in list_probabilities
                     ]
+                p.participant.vars['probability'] = probabilities[0]
 
                 # create list of safe payments
                 safe_payment = Constants.safe_payment
@@ -133,14 +134,14 @@ class Player(BasePlayer):
         # set player's payoff
         # ------------------------------------------------------------------------------------------------------------
         if self.option_to_pay == 'A':
-            self.participant.vars['option_chosen'] = 'Lottery'
+            self.participant.vars['option_chosen'] = 'lottery'
             if self.random_draw <= 5:
                 self.payoff = Constants.lottery_hi
             else:
                 self.payoff = Constants.lottery_lo
             print(self.random_draw)
         else:
-            self.participant.vars['option_chosen'] = 'Safe Payment'
+            self.participant.vars['option_chosen'] = 'safe payment'
             self.payoff = self.participant.vars['list_safe_payments'][self.participant.vars['mpl_index_to_pay'] - 1]
 
         # set payoff as global variable

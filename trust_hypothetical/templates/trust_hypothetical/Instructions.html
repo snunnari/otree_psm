@@ -1,0 +1,46 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+{% block content %}
+
+<div class="wrapper instructions">
+<p>
+    Please consider what you would do in the following situation:
+    you and a person whom you do not know both have to make a decision about the use of some money
+    and together you achieve an outcome.
+    The rules are the following: both of you get an account with {{ endowment }} Euro.
+    Thus, at first, both you and the other person have {{ endowment }} Euro each in their account.
+</p>
+<p>
+    The other person has to decide first. She can transfer money to your account.
+    She can transfer any round amount, i.e. 0 Euro, 1 Euro, 2 Euro, etc. up to {{ endowment }} Euro.
+    Each Euro that the other person decides to transfer to you is tripled by the people conducting the study
+    and then credited to your account.
+    Thus, after the first step the other person has {{ endowment }} Euro minus the amount she transferred to you in her account.
+    You on the other hand have {{ endowment }} Euro plus three times the amount that was transferred in your account.
+</p>
+<p>
+    Now you have to make a decision.
+    You can transfer any amount to the other person, i.e. 0 Euro, 1 Euro, 2 Euro, etc. up to {{ max_endowment }} Euro depending
+    on how much money is in your account after receiving the transfer from the other person.
+    After this decision the study is over, and the amount in the two accounts are final.
+    The other person has {{ endowment }} Euro minus the amount she transferred to you
+    plus the amount you transferred back to her account.
+    You have {{ endowment }} Euro plus three times the amount the other person transferred to you
+    minus the amount you transferred to the other person in your account.
+</p>
+<p>
+    For a given transfer of the other person we would now like to know how much money you would decide to transfer back.
+</p>
+</div>
+    {% next_button %}
+
+{% endblock %}

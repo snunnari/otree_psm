@@ -14,7 +14,7 @@ class Constants(BaseConstants):
     # ---------------------------------------------------------------------------------------------------------------- #
 
     # lottery payoffs
-    # "high" and "low" outcomes (in currency units set in settings.py) of "lottery"
+    # "high" and "low" outcomes (in currency units set in settings.py) of the Lottery option
     # "safe_payment" denotes the initial safe payment, i.e. safe payment at row 1
     # "increment" determines how much the safe payment increases at each row
 
@@ -87,7 +87,7 @@ class Constants(BaseConstants):
 
     # show results page summarizing the task's outcome including payoff information
     # if <results = True>, a separate page containing all relevant information is displayed after finishing the task
-    # if <results = False>, the template "Decision.html" will not be rendered
+    # if <results = False>, the template "Results.html" will not be rendered
     results = True
 
     # ---------------------------------------------------------------------------------------------------------------- #

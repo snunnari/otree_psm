@@ -11,7 +11,7 @@ def vars_for_all_templates(self):
         'lottery_lo': Constants.lottery_lo,
         'lottery_hi': Constants.lottery_hi,
         'safe_payment': Constants.safe_payment,
-        'currency': Constants.currency
+        'currency': Constants.currency,
     }
 
 
@@ -29,7 +29,9 @@ class Instructions(Page):
     # ----------------------------------------------------------------------------------------------------------------
     def vars_for_template(self):
         return {
-            'num_choices':  len(self.participant.vars['mpl_choices'])
+            'num_choices':  len(self.participant.vars['mpl_choices']),
+            'probability':  self.participant.vars['probability'],
+            'enforce_consistency': Constants.enforce_consistency
         }
 
 
