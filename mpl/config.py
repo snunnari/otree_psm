@@ -16,11 +16,14 @@ class Constants(BaseConstants):
     # lottery payoffs
     # "high" and "low" outcomes (in currency units set in settings.py) of "lottery"
     # "safe_payment" denotes the initial safe payment, i.e. safe payment at row 1
+    # "increment" determines how much the safe payment increases at each row
 
     lottery_hi = 300
     lottery_lo = 0
     safe_payment = 0
+    increment = 10
 
+    # currency format
     currency = 'Euro'
 
     # number of binary choices between "lottery A" and "lottery B"

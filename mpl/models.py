@@ -46,10 +46,10 @@ class Subsession(BaseSubsession):
                     ]
 
                 # create list of safe payments
-                safe_payment = 0
+                safe_payment = Constants.safe_payment
                 list_safe_payments = [safe_payment]
                 for j in range(n + 1):
-                    safe_payment += 10
+                    safe_payment += Constants.increment
                     list_safe_payments.append(safe_payment)
 
                 # save list of safe payments for determining payoff
