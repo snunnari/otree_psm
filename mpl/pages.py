@@ -161,7 +161,8 @@ class Results(Page):
                 'choice_to_pay':  [choice_to_pay],
                 'option_to_pay':  self.player.option_to_pay,
                 'payoff':         self.player.payoff,
-                'option_chosen': self.participant.vars['option_chosen']
+                'option_chosen': self.participant.vars['option_chosen'],
+                'index_to_pay': self.participant.vars['mpl_index_to_pay']
             }
 
 

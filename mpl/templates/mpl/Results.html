@@ -45,7 +45,7 @@
 
         <div class="card info">
             {% blocktrans trimmed %}
-                The following decision was randomly chosen for your payment:
+                Decision {{ index_to_pay }} was randomly chosen for your payment:
             {% endblocktrans %}
         </div>
         <br/>
@@ -124,7 +124,7 @@
                     <thead>
                         <tr class="header">
                             <th class="lottery">{% trans "Lottery" %}</th>
-                            <th class="formfield"></th>
+                            <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
                             <th class="formfield"></th>
                             <th class="safe-payment">{% trans "Safe Payment" %}</th>
                         </tr>
@@ -143,7 +143,7 @@
                                 <!-- radio select form fields -->
 
                                 {% if option_to_pay == 'A' %}
-                                <td class="formfield">
+                                <td class="formfield" style="border-right: 2px solid #dee2e6;">
                                     <div class="controls">
                                         <input type="radio" style="pointer-events: none;" checked="checked">
                                     </div>
@@ -154,7 +154,7 @@
                                     </div>
                                 </td>
                                     {% elif option_to_pay == 'B' %}
-                                <td class="formfield">
+                                <td class="formfield" style="border-right: 2px solid #dee2e6;">
                                     <div class="controls">
                                         <input type="radio" style="pointer-events: none;">
                                     </div>
@@ -182,9 +182,9 @@
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <div class="card info">
             <p>
-                As indicated above, you decided to opt for the {{ option_chosen }} in this decision.
+                As indicated above, in this decision you opted for the {{ option_chosen }}.
                 {% if option_to_pay == 'A' %}
-                    For the chosen option, one of the two possible outcomes has been randomly realized based
+                    For this Lottery, one of the two possible outcomes has been realized based
                     on the corresponding probabilities.
                 {% endif %}
             </p>

@@ -32,16 +32,16 @@ class Subsession(BaseSubsession):
 
                 # create list of probabilities
                 # ----------------------------------------------------------------------------------------------------
-                list_probabilities = [5 for j in range(n + 1)]
+                list_probabilities = [1 for j in range(n + 1)]
 
                 if Constants.percentage:
                     probabilities = [
-                        str(pr) + "0%"
+                        str(pr * 5) + "0%"
                         for pr in list_probabilities
                     ]
                 else:
                     probabilities = [
-                        str(pr)
+                        str(pr) + '/2'
                         for pr in list_probabilities
                     ]
 
@@ -118,10 +118,6 @@ class Player(BasePlayer):
     # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     def set_payoffs(self):
 
-        # random draw to determine whether to pay the "high" or "low" outcome of the randomly picked lottery
-        # ------------------------------------------------------------------------------------------------------------
-        self.random_draw = randrange(1, len(self.participant.vars['mpl_choices']))
-
         # set <choice_to_pay> to participant.var['choice_to_pay'] determined creating_session
         # ------------------------------------------------------------------------------------------------------------
         self.choice_to_pay = self.participant.vars['mpl_choice_to_pay']
@@ -130,14 +126,19 @@ class Player(BasePlayer):
         # ------------------------------------------------------------------------------------------------------------
         self.option_to_pay = getattr(self, self.choice_to_pay)
 
+        # random draw to determine whether to pay the "high" or "low" outcome of the randomly picked lottery
+        # ------------------------------------------------------------------------------------------------------------
+        self.random_draw = randrange(1, 11)
+
         # set player's payoff
         # ------------------------------------------------------------------------------------------------------------
         if self.option_to_pay == 'A':
             self.participant.vars['option_chosen'] = 'Lottery'
-            if self.random_draw <= self.participant.vars['mpl_index_to_pay']:
+            if self.random_draw <= 5:
                 self.payoff = Constants.lottery_hi
             else:
                 self.payoff = Constants.lottery_lo
+            print(self.random_draw)
         else:
             self.participant.vars['option_chosen'] = 'Safe Payment'
             self.payoff = self.participant.vars['list_safe_payments'][self.participant.vars['mpl_index_to_pay'] - 1]

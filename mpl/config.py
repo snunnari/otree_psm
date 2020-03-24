@@ -56,8 +56,8 @@ class Constants(BaseConstants):
     enforce_consistency = True
 
     # depict probabilities as percentage numbers
-    # if <percentage = True>, the probability of outcome "high" will be displayed as percentage number
-    # if <percentage = False>, the probabilities will be displayed as fractions, i.e. "1/X", "2/X", etc.
+    # if <percentage = True>, the probability of outcome "high" will be displayed as percentage number, i.e. "50%"
+    # if <percentage = False>, the probabilities will be displayed as fractions, i.e. "1/2" etc.
     percentage = True
 
     # show small pie charts for each lottery
