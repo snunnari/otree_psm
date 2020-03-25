@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/_builtin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Instructions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Question1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Question2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Question3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Question4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Question5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/trust_hypothetical/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/static/patience/css/style_patience.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/static/patience/js/consistency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Decision.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Instructions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patience/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mpl/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/pages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/static/mpl/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/static/mpl/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,19 +54,19 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/patience" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\trust_hypothetical\templates\trust_hypothetical" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\altruism_hypothetical\static\altruism_hypothetical\css" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\trust_hypothetical\static\trust_hypothetical\css" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\reciprocity_hypothetical\static\reciprocity_hypothetical\css" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\self_assessment\templates\self_assessment" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience" />
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\static\patience\js" />
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\templates\patience" />
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\static\patience\css" />
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\trust_hypothetical\templates\trust_hypothetical" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -130,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585043035503</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Risk Aversion (mpl) - better table + instructions change wrt &quot;enforce_consistency&quot;; programmed Trust Hypothetical">
+      <created>1585066410283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585066410283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,7 +140,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;db.sqlite3" />
     <MESSAGE value="Risk Aversion (mpl) - fixed probabilities" />
     <MESSAGE value="Risk Aversion (mpl) - safe payment value and its increment can be now selected in config.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Risk Aversion (mpl) - safe payment value and its increment can be now selected in config.py" />
+    <MESSAGE value="Risk Aversion (mpl) - better table + instructions change wrt &quot;enforce_consistency&quot;; programmed Trust Hypothetical" />
+    <option name="LAST_COMMIT_MESSAGE" value="Risk Aversion (mpl) - better table + instructions change wrt &quot;enforce_consistency&quot;; programmed Trust Hypothetical" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="140" key="#Notifications" timestamp="1584995429112">
@@ -153,10 +153,10 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="483" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1585040057890" />
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1585043033535">
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1585066407739">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1585043033535" />
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1585066407739" />
     <state x="144" y="79" key="DiffContextDialog" timestamp="1584980059302">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -183,13 +183,17 @@
     </state>
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584811772394" />
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1585043039141">
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1585066418049">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1585043039141" />
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1585066418049" />
     <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584711827809">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1504.963@0.0.1504.963" timestamp="1584711827809" />
+    <state x="409" y="135" width="670" height="676" key="search.everywhere.popup" timestamp="1585147924808">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="409" y="135" width="670" height="676" key="search.everywhere.popup/0.0.1504.963@0.0.1504.963" timestamp="1585147924808" />
   </component>
 </project>

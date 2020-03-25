@@ -13,24 +13,40 @@ class Constants(BaseConstants):
     # --- Task-specific Settings --- #
     # ---------------------------------------------------------------------------------------------------------------- #
 
-    # lottery payoffs
-    # "high" and "low" outcomes (in currency units set in settings.py) of the Lottery option
-    # "safe_payment" denotes the initial safe payment, i.e. safe payment at row 1
-    # "increment" determines how much the safe payment increases at each row
+    # currency (symbol)
+    currency = '€'
 
-    lottery_hi = 300
-    lottery_lo = 0
-    safe_payment = 0
-    increment = 10
+    # number of binary choices between "payment today" and "payment in 12 months"
+    num_choices = 25
 
-    # currency format
-    currency = 'Euro'
-
-    # number of binary choices between "lottery" and "safe payment"
-    num_choices = 31
-
-    # include 'certain' choice
+    # include certain choice
     certain_choice = True
+
+    # original list of payments in 12 moths used by Falk et al. (2016)
+    original_list = [
+        100.00, 103.00, 106.10, 109.20, 112.40,
+        115.60, 118.80, 122.10, 125.40, 128.80,
+        132.30, 135.70, 139.20, 142.80, 146.40,
+        150.10, 153.80, 157.50, 161.30, 165.10,
+        169.00, 172.90, 176.90, 180.90, 185.00
+        ]
+
+    # Use original list of payments
+    # "True" means that the for the payments in 12 months the original list by Falk et al. (2016) will be used.
+    # "False" means that the list of payments in 12 months will be created anew,
+    # based on the parameter "increment" and "rate" specified below.
+    use_original_list = True
+
+    # if the list is to be created anew
+    # "payment" denotes the payment today
+    # "payment12" denotes the initial payment in 12 months, i.e. at row 1
+    # "increment" determines the initial increment in the payment in 12 months (i.e. from row 1 to row 2)
+    # "rate" denotes how much the increment changes from row to row
+
+    payment = 100
+    payment12 = payment
+    increment = 3
+    rate = 0.05
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- Overall Settings and Appearance --- #
@@ -82,13 +98,13 @@ class Constants(BaseConstants):
     # show results page summarizing the task's outcome including payoff information
     # if <results = True>, a separate page containing all relevant information is displayed after finishing the task
     # if <results = False>, the template "Results.html" will not be rendered
-    results = True
+    results = False
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- oTree Settings (Don't Modify) --- #
     # ---------------------------------------------------------------------------------------------------------------- #
 
-    name_in_url = 'mpl'
+    name_in_url = 'patience'
     players_per_group = None
 
     if one_choice_per_page:

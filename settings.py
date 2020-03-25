@@ -38,6 +38,12 @@ SESSION_CONFIGS = [
         'app_sequence': ['mpl'],
     },
     {
+        'name': 'patience',
+        'display_name': "Patience - Multiple Price List",
+        'num_demo_participants': 1,
+        'app_sequence': ['patience'],
+    },
+    {
         'name': 'icl_time',
         'display_name': "Patience (Today vs. 12 Months) - Staircase Method",
         'num_demo_participants': 1,
