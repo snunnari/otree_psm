@@ -21,6 +21,12 @@ class Subsession(BaseSubsession):
     # initiate list of sure payoffs and implied switching row in first round
     # ------------------------------------------------------------------------------------------------------------
     def creating_session(self):
+        # creating index denoting new App (e.g., Part 'index')
+        for p in self.get_players():
+            p.participant.vars['part_index'] = 0
+            if self.round_number == 1:
+                p.participant.vars['part_index'] += 1
+
         if self.round_number == 1:
             for p in self.get_players():
                 p.participant.vars['icl_time_sure_payoffs'] = [Constants.sure_payoff]
