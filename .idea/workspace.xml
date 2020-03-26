@@ -2,21 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/patience/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/_builtin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/pages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/static/patience/css/style_patience.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/static/patience/js/consistency.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Decision.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Instructions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/templates/patience/Results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patience/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/_builtin/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/pages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/static/negative_reciprocity/css/style_negrec.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity/Decision.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/negative_reciprocity/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/icl/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/templates/icl_time/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/templates/icl_time/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mpl/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/pages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patience/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/patience/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patience/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/patience/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" beforeDir="false" afterPath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/pages.py" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/pages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,19 +68,19 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/patience" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\negative_reciprocity\templates\negative_reciprocity" />
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\negative_reciprocity\static\negative_reciprocity\css" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\static\patience\js" />
       <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\templates\patience" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\patience\static\patience\css" />
-      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\trust_hypothetical\templates\trust_hypothetical" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucac\Documents\GitHub\otree_psm\willingness_to_act\static\willingness_to_act" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -129,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585066410283</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Patience (mpl)">
+      <created>1585157591895</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1585157591896</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,7 +162,8 @@
     <MESSAGE value="Risk Aversion (mpl) - fixed probabilities" />
     <MESSAGE value="Risk Aversion (mpl) - safe payment value and its increment can be now selected in config.py" />
     <MESSAGE value="Risk Aversion (mpl) - better table + instructions change wrt &quot;enforce_consistency&quot;; programmed Trust Hypothetical" />
-    <option name="LAST_COMMIT_MESSAGE" value="Risk Aversion (mpl) - better table + instructions change wrt &quot;enforce_consistency&quot;; programmed Trust Hypothetical" />
+    <MESSAGE value="Patience (mpl)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Patience (mpl)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="345" y="140" key="#Notifications" timestamp="1584995429112">
@@ -153,10 +175,10 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="483" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1585040057890" />
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1585066407739">
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2" timestamp="1585157590400">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1585066407739" />
+    <state x="409" y="76" width="870" height="872" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1585157590400" />
     <state x="144" y="79" key="DiffContextDialog" timestamp="1584980059302">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -183,10 +205,10 @@
     </state>
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584811772394" />
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1585066418049">
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2" timestamp="1585157600151">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1585066418049" />
+    <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1585157600151" />
     <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584711827809">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

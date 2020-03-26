@@ -21,9 +21,15 @@ class Subsession(BaseSubsession):
     # initiate list of sure payoffs and implied switching row in first round
     # ------------------------------------------------------------------------------------------------------------
     def creating_session(self):
+        # creating index denoting new App (e.g., Part 'index')
+        for p in self.get_players():
+            p.participant.vars['part_index'] = 0
+            if self.round_number == 1:
+                p.participant.vars['part_index'] += 1
+
         if self.round_number == 1:
             for p in self.get_players():
-                p.participant.vars['icl_sure_payoffs'] = [Constants.sure_payoff]
+                p.participant.vars['icl_time_sure_payoffs'] = [Constants.sure_payoff]
                 p.participant.vars['icl_switching_row'] = 2 ** Constants.num_choices
 
 
@@ -53,20 +59,20 @@ class Player(BasePlayer):
 
         # add current round's sure payoff to model field
         # ------------------------------------------------------------------------------------------------------------
-        self.sure_payoff = self.participant.vars['icl_sure_payoffs'][self.round_number - 1]
+        self.sure_payoff = self.participant.vars['icl_time_sure_payoffs'][self.round_number - 1]
 
         # determine sure payoff for next choice and append list of sure payoffs
         # ------------------------------------------------------------------------------------------------------------
         if not self.round_number == Constants.num_choices:
 
             if self.choice == 'A':
-                self.participant.vars['icl_sure_payoffs'].append(
-                    self.participant.vars['icl_sure_payoffs'][self.round_number - 1]
+                self.participant.vars['icl_time_sure_payoffs'].append(
+                    self.participant.vars['icl_time_sure_payoffs'][self.round_number - 1]
                     + Constants.delta / 2 ** (self.round_number - 1)
                 )
             elif self.choice == 'B':
-                self.participant.vars['icl_sure_payoffs'].append(
-                    self.participant.vars['icl_sure_payoffs'][self.round_number - 1]
+                self.participant.vars['icl_time_sure_payoffs'].append(
+                    self.participant.vars['icl_time_sure_payoffs'][self.round_number - 1]
                     - Constants.delta / 2 ** (self.round_number - 1)
                 )
             else:

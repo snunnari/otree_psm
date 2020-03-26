@@ -56,28 +56,28 @@ class Subsession(BaseSubsession):
 
                 # create list of choices
                 # ----------------------------------------------------------------------------------------------------
-                p.participant.vars['mpl_choices'] = list(
+                p.participant.vars['patience_choices'] = list(
                     zip(indices, form_fields, p.participant.vars['list_payments'])
                 )
 
                 # randomly determine index/choice of binary decision to pay
                 # ----------------------------------------------------------------------------------------------------
-                p.participant.vars['mpl_index_to_pay'] = random.choice(indices)
-                p.participant.vars['mpl_choice_to_pay'] = 'choice_' + str(p.participant.vars['mpl_index_to_pay'])
+                p.participant.vars['patience_index_to_pay'] = random.choice(indices)
+                p.participant.vars['patience_choice_to_pay'] = 'choice_' + str(p.participant.vars['patience_index_to_pay'])
 
                 # randomize order of lotteries if <random_order = True>
                 # ----------------------------------------------------------------------------------------------------
                 if Constants.random_order:
-                    random.shuffle(p.participant.vars['mpl_choices'])
+                    random.shuffle(p.participant.vars['patience_choices'])
 
                 # initiate list for choices made
                 # ----------------------------------------------------------------------------------------------------
-                p.participant.vars['mpl_choices_made'] = [None for j in range(1, n + 1)]
+                p.participant.vars['patience_choices_made'] = [None for j in range(1, n + 1)]
 
             # generate random switching point for PlayerBot in tests.py
             # --------------------------------------------------------------------------------------------------------
             for participant in self.session.get_participants():
-                participant.vars['mpl_switching_point'] = random.randint(1, n)
+                participant.vars['patience_switching_point'] = random.randint(1, n)
 
 
 # ******************************************************************************************************************** #
@@ -115,7 +115,7 @@ class Player(BasePlayer):
 
         # set <choice_to_pay> to participant.var['choice_to_pay'] determined creating_session
         # ------------------------------------------------------------------------------------------------------------
-        self.choice_to_pay = self.participant.vars['mpl_choice_to_pay']
+        self.choice_to_pay = self.participant.vars['patience_choice_to_pay']
 
         # elicit whether lottery "A" or "B" was chosen for the respective choice
         # ------------------------------------------------------------------------------------------------------------
@@ -135,14 +135,14 @@ class Player(BasePlayer):
             self.participant.vars['option_chosen'] = 'payment in 12 months'
 
             if Constants.results:
-                self.payoff = self.participant.vars['list_payments'][self.participant.vars['mpl_index_to_pay'] - 1]
+                self.payoff = self.participant.vars['list_payments'][self.participant.vars['patience_index_to_pay'] - 1]
             else:
                 self.payoff = Constants.payment
         print(self.payoff)
 
         # set payoff as global variable
         # ------------------------------------------------------------------------------------------------------------
-        self.participant.vars['mpl_payoff'] = self.payoff
+        self.participant.vars['patience_payoff'] = self.payoff
 
     # determine consistency
     # ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -151,13 +151,13 @@ class Player(BasePlayer):
         n = Constants.num_choices
 
         # replace A's by 1's and B's by 0's
-        self.participant.vars['mpl_choices_made'] = [
-            1 if j == 'A' else 0 for j in self.participant.vars['mpl_choices_made']
+        self.participant.vars['patience_choices_made'] = [
+            1 if j == 'A' else 0 for j in self.participant.vars['patience_choices_made']
         ]
 
         # check for multiple switching behavior
         for j in range(1, n):
-            choices = self.participant.vars['mpl_choices_made']
+            choices = self.participant.vars['patience_choices_made']
             self.inconsistent = 1 if choices[j] > choices[j - 1] else 0
             if self.inconsistent == 1:
                 break
@@ -168,4 +168,4 @@ class Player(BasePlayer):
 
         # set switching point to row number of first 'B' choice
         if self.inconsistent == 0:
-            self.switching_row = sum(self.participant.vars['mpl_choices_made']) + 1
+            self.switching_row = sum(self.participant.vars['patience_choices_made']) + 1

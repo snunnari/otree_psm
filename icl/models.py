@@ -129,3 +129,7 @@ class Player(BasePlayer):
             # implied switching row
             # --------------------------------------------------------------------------------------------------------
             self.in_round(choice_to_pay).switching_row = self.participant.vars['icl_switching_row']
+
+    def update_part_index(self):
+        self.participant.vars['part_index'] += 1
+        print(self.participant.vars['part_index'])

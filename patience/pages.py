@@ -28,7 +28,7 @@ class Instructions(Page):
     # ----------------------------------------------------------------------------------------------------------------
     def vars_for_template(self):
         return {
-            'num_choices':  len(self.participant.vars['mpl_choices']),
+            'num_choices':  len(self.participant.vars['patience_choices']),
             'list_payments': self.participant.vars['list_payments'],
             'payment1': self.participant.vars['list_payments'][0],
             'payment2': self.participant.vars['list_payments'][1],
@@ -52,7 +52,7 @@ class Decision(Page):
     def get_form_fields(self):
 
         # unzip list of form_fields from <mpl_choices> list
-        form_fields = [list(t) for t in zip(*self.participant.vars['mpl_choices'])][1]
+        form_fields = [list(t) for t in zip(*self.participant.vars['patience_choices'])][1]
 
         # provide form field associated with pagination or full list
         if Constants.one_choice_per_page:
@@ -66,7 +66,7 @@ class Decision(Page):
     def vars_for_template(self):
 
         # specify info for progress bar
-        total = len(self.participant.vars['mpl_choices'])
+        total = len(self.participant.vars['patience_choices'])
         page = self.subsession.round_number
         progress = page / total * 100
 
@@ -75,11 +75,11 @@ class Decision(Page):
                 'page':      page,
                 'total':     total,
                 'progress':  progress,
-                'choices':   [self.player.participant.vars['mpl_choices'][page - 1]]
+                'choices':   [self.player.participant.vars['patience_choices'][page - 1]]
             }
         else:
             return {
-                'choices':   self.player.participant.vars['mpl_choices'],
+                'choices':   self.player.participant.vars['patience_choices'],
             }
 
     # set player's payoff
@@ -88,8 +88,8 @@ class Decision(Page):
 
         # unzip indices and form fields from <mpl_choices> list
         round_number = self.subsession.round_number
-        form_fields = [list(t) for t in zip(*self.participant.vars['mpl_choices'])][1]
-        indices = [list(t) for t in zip(*self.participant.vars['mpl_choices'])][0]
+        form_fields = [list(t) for t in zip(*self.participant.vars['patience_choices'])][1]
+        indices = [list(t) for t in zip(*self.participant.vars['patience_choices'])][0]
         index = indices[round_number - 1]
 
         # if choices are displayed sequentially
@@ -98,10 +98,10 @@ class Decision(Page):
 
             # replace current choice in <choices_made>
             current_choice = getattr(self.player, form_fields[round_number - 1])
-            self.participant.vars['mpl_choices_made'][index - 1] = current_choice
+            self.participant.vars['patience_choices_made'][index - 1] = current_choice
 
             # if current choice equals index to pay ...
-            if index == self.player.participant.vars['mpl_index_to_pay']:
+            if index == self.player.participant.vars['patience_index_to_pay']:
                 # set payoff
                 self.player.set_payoffs()
 
@@ -119,7 +119,7 @@ class Decision(Page):
             # replace choices in <choices_made>
             for j, choice in zip(indices, form_fields):
                 choice_i = getattr(self.player, choice)
-                self.participant.vars['mpl_choices_made'][j - 1] = choice_i
+                self.participant.vars['patience_choices_made'][j - 1] = choice_i
 
             # set payoff
             self.player.set_payoffs()
@@ -147,13 +147,13 @@ class Results(Page):
     def vars_for_template(self):
 
         # unzip <mpl_choices> into list of lists
-        choices = [list(t) for t in zip(*self.participant.vars['mpl_choices'])]
+        choices = [list(t) for t in zip(*self.participant.vars['patience_choices'])]
         indices = choices[0]
 
         # get index, round, and choice to pay
-        index_to_pay = self.player.participant.vars['mpl_index_to_pay']
+        index_to_pay = self.player.participant.vars['patience_index_to_pay']
         round_to_pay = indices.index(index_to_pay) + 1
-        choice_to_pay = self.participant.vars['mpl_choices'][round_to_pay - 1]
+        choice_to_pay = self.participant.vars['patience_choices'][round_to_pay - 1]
 
         if Constants.one_choice_per_page:
             return {
@@ -167,7 +167,7 @@ class Results(Page):
                 'option_to_pay':  self.player.option_to_pay,
                 'payoff':         self.player.payoff,
                 'option_chosen': self.participant.vars['option_chosen'],
-                'index_to_pay': self.participant.vars['mpl_index_to_pay']
+                'index_to_pay': self.participant.vars['patience_index_to_pay']
             }
 
 
