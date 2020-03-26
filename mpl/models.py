@@ -25,6 +25,11 @@ class Subsession(BaseSubsession):
             n = Constants.num_choices
             for p in self.get_players():
 
+                # create Part index to show in templates' title (i.e., "Part <index>")
+                # ----------------------------------------------------------------------------------------------------
+                if "p.participant.vars['part_index']" not in globals():
+                    p.participant.vars['part_index'] = 1
+
                 # create list of lottery indices
                 # ----------------------------------------------------------------------------------------------------
                 indices = [j for j in range(1, n)]
@@ -173,3 +178,8 @@ class Player(BasePlayer):
         # set switching point to row number of first 'B' choice
         if self.inconsistent == 0:
             self.switching_row = sum(self.participant.vars['mpl_choices_made']) + 1
+
+    # create function to increase part index by 1 when App changes
+    # ------------------------------------------------------------------------------------------------------------------
+    def update_part_index(self):
+        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1

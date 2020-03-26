@@ -26,7 +26,14 @@ class Constants(BaseConstants):
 
 
 class Subsession(BaseSubsession):
-    pass
+
+    def creating_session(self):
+
+        # create Part index to show in templates' title (i.e., "Part <index>")
+        # ----------------------------------------------------------------------------------------------------------
+        if "p.participant.vars['part_index']" not in globals():
+            for p in self.get_players():
+                p.participant.vars['part_index'] = 1
 
 
 class Group(BaseGroup):
@@ -39,4 +46,9 @@ class Player(BasePlayer):
         min=0, max=Constants.endowment,
         label=''
     )
+
+    # create function to increase part index by 1 when App changes
+    # ------------------------------------------------------------------------------------------------------------------
+    def update_part_index(self):
+        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
 

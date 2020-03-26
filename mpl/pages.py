@@ -12,6 +12,7 @@ def vars_for_all_templates(self):
         'lottery_hi': Constants.lottery_hi,
         'safe_payment': Constants.safe_payment,
         'currency': Constants.currency,
+        'part_index': self.participant.vars['part_index']
     }
 
 
@@ -124,6 +125,8 @@ class Decision(Page):
             self.player.set_consistency()
             # set switching row
             self.player.set_switching_row()
+            # update part index
+            return self.player.update_part_index()
 
 
 # ******************************************************************************************************************** #

@@ -9,8 +9,12 @@ class Altruism(Page):
 
     def vars_for_template(self):
         return dict(
-            endowment=Constants.endowment
+            endowment=Constants.endowment,
+            part_index=self.participant.vars['part_index']
         )
+
+    def before_next_page(self):
+        return self.player.update_part_index()
 
 
 page_sequence = [Altruism]

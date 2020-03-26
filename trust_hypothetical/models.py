@@ -41,6 +41,11 @@ class Subsession(BaseSubsession):
             # dynamic form fields
             p.participant.vars['form_fields'] = [['transfer1'], ['transfer2'], ['transfer3'], ['transfer4']]
 
+            # create Part index to show in templates' title (i.e., "Part <index>")
+            # ----------------------------------------------------------------------------------------------------------
+            if "p.participant.vars['part_index']" not in globals():
+                p.participant.vars['part_index'] = 1
+
 
 class Group(BaseGroup):
     pass
@@ -100,3 +105,8 @@ class Player(BasePlayer):
         self.participant.vars['final_endowment'] = Constants.endowment + Constants.rate \
                                                    * self.participant.vars['other_transfer']
         self.participant.vars['other_endowment'] = Constants.endowment - self.participant.vars['other_transfer']
+
+    # create function to increase part index by 1 when App changes
+    # ------------------------------------------------------------------------------------------------------------------
+    def update_part_index(self):
+        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1

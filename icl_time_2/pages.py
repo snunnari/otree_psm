@@ -13,8 +13,10 @@ def vars_for_all_templates(self):
         'p_hi': "{0:.0f}".format(Constants.probability) + "%",
         'p_lo': "{0:.0f}".format(100 - Constants.probability) + "%",
         'hi':   "{0:.0f}".format(Constants.lottery_hi),
-        'lo':   "{0:.0f}".format(Constants.lottery_lo)
+        'lo':   "{0:.0f}".format(Constants.lottery_lo),
+        'part_index': self.participant.vars['part_index']
     }
+
 
 # ******************************************************************************************************************** #
 # *** CLASS INSTRUCTIONS *** #
@@ -64,6 +66,8 @@ class Decision(Page):
     def before_next_page(self):
         self.player.set_sure_payoffs()
         self.player.update_switching_row()
+        if self.subsession.round_number == Constants.num_choices:
+            self.player.update_part_index()
 
 
 # ******************************************************************************************************************** #

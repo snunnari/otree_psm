@@ -26,6 +26,11 @@ class Subsession(BaseSubsession):
                 p.participant.vars['icl_sure_payoffs'] = [Constants.sure_payoff]
                 p.participant.vars['icl_switching_row'] = 2 ** Constants.num_choices
 
+                # create Part index to show in templates' title (i.e., "Part <index>")
+                # ----------------------------------------------------------------------------------------------------------
+                if "p.participant.vars['part_index']" not in globals():
+                    p.participant.vars['part_index'] = 1
+
 
 # ******************************************************************************************************************** #
 # *** CLASS GROUP
@@ -129,3 +134,8 @@ class Player(BasePlayer):
             # implied switching row
             # --------------------------------------------------------------------------------------------------------
             self.in_round(choice_to_pay).switching_row = self.participant.vars['icl_switching_row']
+
+    # create function to increase part index by 1 when App changes
+    # ------------------------------------------------------------------------------------------------------------------
+    def update_part_index(self):
+        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1

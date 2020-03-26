@@ -3,15 +3,13 @@ from ._builtin import Page, WaitPage
 from .models import Constants
 
 
-class Reciprocity(Page):
+class Decision(Page):
     form_model = 'player'
-    form_fields = ['reciprocity_hypothetical']
+    form_fields = ['negative_reciprocity']
 
     def vars_for_template(self):
         return dict(
-            stranger_cost=Constants.stranger_cost,
-            cheap_present=Constants.cheap_present,
-            expensive_present=Constants.expensive_present,
+            endowment=Constants.endowment,
             part_index=self.participant.vars['part_index']
         )
 
@@ -19,4 +17,4 @@ class Reciprocity(Page):
         return self.player.update_part_index()
 
 
-page_sequence = [Reciprocity]
+page_sequence = [Decision]

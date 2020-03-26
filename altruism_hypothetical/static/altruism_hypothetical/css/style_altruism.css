@@ -133,4 +133,5 @@ p {
 input[type=number].form-control {
     max-width: 100px;
     margin: auto;
+    margin-top: 30px;
 }

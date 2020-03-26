@@ -13,13 +13,47 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
 
+    # main Apps
+    # ------------------------------------------------------------------------------------------------------------------
+
+    {
+        'name': 'PSM_Streamlined_version',
+        'display_name': "Preference Survey Module - Streamlined Version",
+        'num_demo_participants': 1,
+        'app_sequence': [
+            'icl_time', 'self_assessment', 'icl', 'reciprocity_hypothetical',
+            'willingness_to_act', 'altruism_hypothetical'
+             ],
+    },
+    {
+        'name': 'PSM_Lab_version',
+        'display_name': "Preference Survey Module - Lab Version",
+        'num_demo_participants': 1,
+        'app_sequence': [
+            'self_assessment', 'mpl', 'willingness_to_act', 'patience',
+            'trust_hypothetical', 'altruism_hypothetical', 'reciprocity_hypothetical',
+            'negative_reciprocity'
+        ],
+    },
+
+    {
+        'name': 'TEST',
+        'display_name': "TEST",
+        'num_demo_participants': 1,
+        'app_sequence': [
+            'altruism_hypothetical', 'trust_hypothetical',  'reciprocity_hypothetical',
+        ],
+    },
+
+    # single modules
+    # ------------------------------------------------------------------------------------------------------------------
     {
         'name': 'willingness_to_act',
         'display_name': "Willingness-To-Act Questions",
         'num_demo_participants': 1,
         'app_sequence': ['willingness_to_act'],
     },
-{
+    {
         'name': 'self_assessment',
         'display_name': "Self-Assessment Questions",
         'num_demo_participants': 1,
@@ -72,6 +106,12 @@ SESSION_CONFIGS = [
         'display_name': "Trust Hypothetical Questions",
         'num_demo_participants': 1,
         'app_sequence': ['trust_hypothetical'],
+    },
+    {
+        'name': 'negative_reciprocity',
+        'display_name': "Negative Reciprocity Hypothetical Question",
+        'num_demo_participants': 1,
+        'app_sequence': ['negative_reciprocity'],
     },
 ]
 

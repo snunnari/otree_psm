@@ -10,6 +10,7 @@ def vars_for_all_templates(self):
         max_endowment=Constants.max_endowment,
         other_transfer=Constants.other_transfer,
         page=self.subsession.round_number,
+        part_index=self.participant.vars['part_index']
     )
 
 
@@ -83,7 +84,7 @@ class Question4(Page):
         )
 
     def before_next_page(self):
-        return self.player.increase_other_transfer(), self.player.compute_endowment()
+        return self.player.increase_other_transfer(), self.player.compute_endowment(),
 
 
 class Question5(Page):
@@ -91,7 +92,12 @@ class Question5(Page):
     form_model = 'player'
     form_fields = ['transfer5']
 
+    def before_next_page(self):
+        return self.player.update_part_index()
+
 
 page_sequence = [Instructions,
-                 Question1, Question2, Question3, Question4, Question5
+                 Question1,
+                 Question2, Question3, Question4,
+                 Question5
                  ]
