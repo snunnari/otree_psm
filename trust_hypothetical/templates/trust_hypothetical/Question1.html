@@ -1,27 +1,32 @@
 {% extends "global/Page.html" %}
 {% load otree static %}
+{% load i18n %}
 
 {% block styles %}
     <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block title %}
-    Question 1
+        Part {{ part_index }} - Question 1
 {% endblock %}
 
 {% block content %}
 
 <div class="wrapper">
 <p>
-    Assume that the other person transfers {{ other_transfer }} Euro to your account.
-    After the first step you have {{ endowment }}+{{ rate }}*{{ other_transfer }} Euro = {{ final_endowment }} Euro,
-    the other person has {{ endowment }}-{{ other_transfer }} Euro = {{ other_endowment }} Euro.
+    {% blocktrans trimmed with c=currency %}
+    Assume that the other person transfers {{ c }}{{ other_transfer }} to your account.
+    After the first step you have {{ c }}{{ endowment }}+{{ rate }}*{{ c }}{{ other_transfer }} = {{ c }}{{ final_endowment }},
+    the other person has {{ c }}{{ endowment }}-{{ c }}{{ other_transfer }} = {{ c }}{{ other_endowment }}.
     Which amount do you transfer back?
+    {% endblocktrans %}
 </p>
 
     {% formfields %}
 </div>
 
     {% next_button %}
+
+{% include instructions %}
 
 {% endblock %}

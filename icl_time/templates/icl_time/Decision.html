@@ -7,7 +7,7 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'icl/css/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'icl_time/css/custom.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -54,9 +54,9 @@
                 <tr>
                     <th>{% trans "Option A:" %}</th>
                     <td>
-                        {% with hi=hi lo=lo p_hi=p_hi p_lo=p_lo %}
+                        {% with hi=hi lo=lo p_hi=p_hi p_lo=p_lo c=currency %}
                             {% blocktrans trimmed %}
-                                an amount of {{ hi }} Euros today
+                                an amount of {{ c }}{{ hi }} today
                             {% endblocktrans %}
                         {% endwith %}
                     </td>
@@ -75,9 +75,9 @@
                         {% trans "Option B:" %}
                     </th>
                     <td>
-                        {% with sure_payoff=sure_payoff %}
+                        {% with sure_payoff=sure_payoff c=currency %}
                             {% blocktrans trimmed %}
-                                an amount of {{ sure_payoff }} Euros in 12 months
+                                an amount of {{ c }}{{ sure_payoff }} in 12 months
                             {% endblocktrans %}
                         {% endwith %}
                     </td>

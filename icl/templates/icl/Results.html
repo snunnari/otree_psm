@@ -15,7 +15,7 @@
 {# *** TITLE *** #}
 {# ****************************************************************************************************************** #}
 {% block title %}
-    {% trans "Part 4 - Questions 1-5 - Results" %}
+    {% trans "Results" %}
 {% endblock %}
 
 
@@ -27,7 +27,7 @@
     <div class="wrapper">
 
         <div class="card info">
-            {% blocktrans trimmed %}
+            {% blocktrans %}
                 The following decision was randomly chosen for your payment:
             {% endblocktrans %}
         </div>
@@ -47,9 +47,9 @@
                     <th>{% trans "Option A:" %}</th>
                     <td>
                         {% with hi=hi lo=lo p_hi=p_hi p_lo=p_lo %}
-                            {% blocktrans trimmed %}
-                                a {{ p_hi }} chance of winning {{ hi }} and <br/>
-                                a {{ p_lo }} chance of winning {{ lo }}
+                            {% blocktrans trimmed with c=currency %}
+                                {{ p_hi }} chance of winning {{ c }}{{ hi }} and <br/>
+                                {{ p_lo }} chance of winning {{ c }}{{ lo }}
                             {% endblocktrans %}
                         {% endwith %}
                     </td>
@@ -79,8 +79,8 @@
                     </th>
                     <td>
                         {% with sure_payoff=sure_payoff %}
-                            {% blocktrans trimmed %}
-                                an amount of {{ sure_payoff }} as a sure payment
+                            {% blocktrans trimmed with c=currency%}
+                                an amount of {{ c }}{{ sure_payoff }} as a sure payment
                             {% endblocktrans %}
                         {% endwith %}
                     </td>

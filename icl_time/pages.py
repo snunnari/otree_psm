@@ -14,7 +14,8 @@ def vars_for_all_templates(self):
         'p_lo': "{0:.0f}".format(100 - Constants.probability) + "%",
         'hi':   "{0:.0f}".format(Constants.lottery_hi),
         'lo':   "{0:.0f}".format(Constants.lottery_lo),
-        'part_index': self.participant.vars['part_index']
+        'part_index': self.participant.vars['part_index'],
+        'currency': Constants.currency
     }
 
 
@@ -27,6 +28,12 @@ class Instructions(Page):
     # ----------------------------------------------------------------------------------------------------------------
     def is_displayed(self):
         return self.subsession.round_number == 1
+
+    def vars_for_template(self):
+        return dict(
+            today=Constants.today,
+            in_12_months=Constants.in_12_months
+        )
 
 
 # ******************************************************************************************************************** #

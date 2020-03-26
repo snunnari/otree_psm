@@ -100,6 +100,9 @@ class Constants(BaseConstants):
     # if <results = False>, the template "Results.html" will not be rendered
     results = False
 
+    # null payoff (if results is false and the task is not incentive compatible)
+    null_payoff = 0
+
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- oTree Settings (Don't Modify) --- #
     # ---------------------------------------------------------------------------------------------------------------- #

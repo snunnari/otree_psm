@@ -6,6 +6,19 @@ h2 {
     text-align: center !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  text-align:center;
+  padding: 25px;
+}
+
+h4 {
+    text-align: center !important;
+    padding: 20px;
+    padding-top:0;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0;
@@ -21,6 +34,7 @@ h2 {
     min-width: 512px;
     max-width: 768px;
     margin: 0 auto 20px;
+    font-size: 1.1rem;
 }
 
 

@@ -22,12 +22,15 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
+    # instructions template across pages
+    instructions_template = 'trust_hypothetical/Instructions.html'
+
     # endowment, multiplication rate, amount transferred by the counterpart
     # ------------------------------------------------------------------------------------------------------------------
     endowment = 20
     rate = 3
     other_transfer = 5
-
+    currency = '€'
     max_endowment = (rate + 1) * endowment  # only for instructions
 
 

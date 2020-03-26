@@ -9,7 +9,17 @@ from otree.constants import BaseConstants
 # ******************************************************************************************************************** #
 class Constants(BaseConstants):
 
+    currency = '€'
     conversionrate = 250
+
+    # stamp current date and in-12-months date in the Instructions
+    # -----------------------------------------------------------------------------------------------------------------
+    from datetime import date
+    from datetime import timedelta
+    date1 = date.today()
+    date2 = date1 + timedelta(days=365)
+    today = date1.strftime("%B %d, %Y")
+    in_12_months = date2.strftime("%B %d, %Y")
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- Task-specific Settings --- #
@@ -40,7 +50,7 @@ class Constants(BaseConstants):
     # thus, if a subject chooses "A" ("B"), <sure_payoff_i> increases (decreases) by half of the previous rounds <delta>
     # for example: if <sure_payoff = x> and <delta = y>, "Option B" offers <x +/- y/2> in choice 2, <x +/- y/2 +/- y/4>
     # in choice 3, etc.
-    delta = 32.00
+    delta = 31.00
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- Overall Settings and Appearance --- #

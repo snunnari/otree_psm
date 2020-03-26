@@ -28,6 +28,12 @@ class Instructions(Page):
     def is_displayed(self):
         return self.subsession.round_number == 1
 
+    def vars_for_template(self):
+        return dict(
+            in_12_months=Constants.in_12_months,
+            in_24_months=Constants.in_24_months
+        )
+
 
 # ******************************************************************************************************************** #
 # *** PAGE DECISION *** #

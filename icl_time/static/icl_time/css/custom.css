@@ -6,6 +6,19 @@ h2 {
     text-align: center !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  text-align:center;
+  padding: 25px;
+}
+
+h4 {
+    text-align: center !important;
+    padding: 20px;
+    padding-top:0;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0px;
@@ -21,6 +34,7 @@ h2 {
     min-width: 500px;
     max-width: 600px;
     margin: 0 auto 20px;
+    font-size: 1.1rem;
 }
 
 
@@ -34,6 +48,7 @@ h2 {
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
     padding: 20px 20px 10px 20px;
+    font-size: 1.1rem;
 
     position:relative;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;

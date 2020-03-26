@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 600px;
     max-width: 800px;
     margin: 40px auto 20px;
+    font-size: 1.1rem;
 }
 
 .form-check-input, label {

@@ -2,10 +2,24 @@
 /* *** General *** */
 /* ****************************************************************************************************************** */
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: $headings-margin-bottom;
+  text-align:center;
+  padding: 25px;
+}
 
 h2 {
     text-align: center !important;
 }
+
+h4 {
+    text-align: center !important;
+    padding: 20px;
+    padding-top:0;
+
+}
+
 
 .otree-body.container {
     max-width:1000px;
@@ -19,13 +33,6 @@ h2 {
     padding: 0;
     border-bottom: none;
     text-align:center;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: $headings-margin-bottom;
-  text-align:center;
-  padding: 25px;
 }
 
 .otree-btn-next {

@@ -7,7 +7,7 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'icl/css/custom.css' %}" rel="stylesheet"/>
+    <link href="{% static 'icl_time/css/custom.css' %}" rel="stylesheet"/>
 {% endblock %}
 
 
@@ -29,11 +29,12 @@
 {% block content %}
 
 <div class="wrapper instructions">
-
+<p>
+<h4>Instructions</h4>
     {% blocktrans trimmed with p_hi=p_hi hi=hi p_lo=p_lo lo=lo %}
         <p>Suppose you were given the choice between receiving
-            a payment <font color="blue"><b>today (April 2, 2019)</b></font> or
-            a payment <font color="red"><b>in 12 months (April 2, 2020)</b></font>.</p>
+            a payment <font color="blue"><b> today ({{ today }}) </b></font> or
+            a payment <font color="red"><b>in 12 months ({{ in_12_months }})</b></font>.</p>
     {% endblocktrans %}
 
     {% blocktrans trimmed with n=Constants.num_choices %}
@@ -57,6 +58,7 @@
         {% endblocktrans %}
     </p>
     {% endcomment %}
+</p>
 </div>
 
     {% next_button %}

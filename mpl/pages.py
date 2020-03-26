@@ -12,7 +12,8 @@ def vars_for_all_templates(self):
         'lottery_hi': Constants.lottery_hi,
         'safe_payment': Constants.safe_payment,
         'currency': Constants.currency,
-        'part_index': self.participant.vars['part_index']
+        'part_index': self.participant.vars['part_index'],
+        'results': Constants.results
     }
 
 

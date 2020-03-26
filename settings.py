@@ -15,7 +15,6 @@ SESSION_CONFIGS = [
 
     # main Apps
     # ------------------------------------------------------------------------------------------------------------------
-
     {
         'name': 'PSM_Streamlined_version',
         'display_name': "Preference Survey Module - Streamlined Version",
@@ -33,15 +32,6 @@ SESSION_CONFIGS = [
             'self_assessment', 'mpl', 'willingness_to_act', 'patience',
             'trust_hypothetical', 'altruism_hypothetical', 'reciprocity_hypothetical',
             'negative_reciprocity'
-        ],
-    },
-
-    {
-        'name': 'TEST',
-        'display_name': "TEST",
-        'num_demo_participants': 1,
-        'app_sequence': [
-            'altruism_hypothetical', 'trust_hypothetical',  'reciprocity_hypothetical',
         ],
     },
 

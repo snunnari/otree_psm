@@ -134,16 +134,14 @@ class Player(BasePlayer):
         # ------------------------------------------------------------------------------------------------------------
         if self.option_to_pay == 'A':
             self.participant.vars['option_chosen'] = 'payment today'
-            self.payoff = Constants.payment
-
+            self.payoff = Constants.null_payoff
+            if Constants.results:
+                self.payoff = Constants.payment
         else:
             self.participant.vars['option_chosen'] = 'payment in 12 months'
-
+            self.payoff = Constants.null_payoff
             if Constants.results:
                 self.payoff = self.participant.vars['list_payments'][self.participant.vars['patience_index_to_pay'] - 1]
-            else:
-                self.payoff = Constants.payment
-        print(self.payoff)
 
         # set payoff as global variable
         # ------------------------------------------------------------------------------------------------------------

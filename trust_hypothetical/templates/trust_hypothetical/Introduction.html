@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+{% load i18n %}
+
+{% block styles %}
+    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+    Part {{ part_index }}
+{% endblock %}
+
+{% block content %}
+
+{% include instructions %}
+
+    {% next_button %}
+
+{% endblock %}

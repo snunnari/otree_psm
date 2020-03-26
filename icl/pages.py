@@ -14,7 +14,8 @@ def vars_for_all_templates(self):
         'p_lo': "{0:.0f}".format(100 - Constants.probability) + "%",
         'hi':   "{0:.0f}".format(Constants.lottery_hi),
         'lo':   "{0:.0f}".format(Constants.lottery_lo),
-        'part_index': self.participant.vars['part_index']
+        'part_index': self.participant.vars['part_index'],
+        'currency': Constants.currency
     }
 
 

@@ -26,6 +26,7 @@
 
     <div class="wrapper instructions">
         <p>
+            <h4>Instructions</h4>
             {% blocktrans trimmed with n=num_choices %}
             On the following screen you will see {{ n }} hypothetical scenarios.
             In each scenario you can choose between a lottery and a safe payment.
@@ -66,6 +67,7 @@
 
         {% endif %}
 
+        {% if results %}
         <p>
             {% blocktrans trimmed with n=num_choices %}
                 After you have submitted your decision, one of the {{ n }} scenarios will be randomly chosen for
@@ -74,6 +76,7 @@
                 to the corresponding probabilities. Otherwise, you will earn the safe payment.
             {% endblocktrans %}
         </p>
+        {% endif %}
 
     </div>
 

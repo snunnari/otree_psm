@@ -140,14 +140,20 @@ class Player(BasePlayer):
         # ------------------------------------------------------------------------------------------------------------
         if self.option_to_pay == 'A':
             self.participant.vars['option_chosen'] = 'lottery'
-            if self.random_draw <= 5:
-                self.payoff = Constants.lottery_hi
+            if Constants.results:
+                if self.random_draw <= 5:
+                    self.payoff = Constants.lottery_hi
+                else:
+                    self.payoff = Constants.lottery_lo
+                print(self.random_draw)
             else:
-                self.payoff = Constants.lottery_lo
-            print(self.random_draw)
+                self.payoff = Constants.null_payoff
         else:
             self.participant.vars['option_chosen'] = 'safe payment'
-            self.payoff = self.participant.vars['list_safe_payments'][self.participant.vars['mpl_index_to_pay'] - 1]
+            if Constants.results:
+                self.payoff = self.participant.vars['list_safe_payments'][self.participant.vars['mpl_index_to_pay'] - 1]
+            else:
+                self.payoff = Constants.null_payoff
 
         # set payoff as global variable
         # ------------------------------------------------------------------------------------------------------------

@@ -9,7 +9,18 @@ from otree.constants import BaseConstants
 # ******************************************************************************************************************** #
 class Constants(BaseConstants):
 
+    currency = '€'
     conversionrate = 250
+
+    # stamp in-12-months and in-24-months dates in the Instructions
+    # -----------------------------------------------------------------------------------------------------------------
+    from datetime import date
+    from datetime import timedelta
+    date0 = date.today()
+    date1 = date0 + timedelta(days=365)
+    date2 = date1 + timedelta(days=365)
+    in_12_months = date1.strftime("%B %d, %Y")
+    in_24_months = date2.strftime("%B %d, %Y")
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- Task-specific Settings --- #
