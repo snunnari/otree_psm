@@ -7,7 +7,7 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'patience/css/custom.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -22,8 +22,6 @@
             percentage = "{{ Constants.percentage }}";
             large_pies = "{{ Constants.large_pies }}";
         </script>
-        <script src="https://code.highcharts.com/highcharts.js"></script>
-        <script src="{% static 'mpl/js/pie_charts.js' %}"></script>
     {% endif %}
 {% endblock %}
 

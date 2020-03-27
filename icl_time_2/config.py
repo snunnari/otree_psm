@@ -42,7 +42,7 @@ class Constants(BaseConstants):
     # (initial) sure payoff, i.e. the certain payment in the first choice
     # <sure_payoff> defines the certain amount offered as "Option B" in the first of <num_choices> choices
     # the sure payoffs for subsequent choices are determined by <delta> (see below)
-    sure_payoff = 165.00
+    sure_payoff = 154.00
 
     # (initial) increase/decrease in sure payoff
     # while the first choice offers a fix payment of <sure_payoff>, "Option B" in subsequent choices depend on <delta>
@@ -51,7 +51,7 @@ class Constants(BaseConstants):
     # thus, if a subject chooses "A" ("B"), <sure_payoff_i> increases (decreases) by half of the previous rounds <delta>
     # for example: if <sure_payoff = x> and <delta = y>, "Option B" offers <x +/- y/2> in choice 2, <x +/- y/2 +/- y/4>
     # in choice 3, etc.
-    delta = 32.00
+    delta = 28.00
 
     # ---------------------------------------------------------------------------------------------------------------- #
     # --- Overall Settings and Appearance --- #

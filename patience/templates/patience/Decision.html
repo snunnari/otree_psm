@@ -26,7 +26,7 @@
 
     {% if Constants.enforce_consistency == True %}
         {% if Constants.one_choice_per_page == False and Constants.random_order == False %}
-            <script src="{% static 'mpl/js/consistency.js' %}"></script>
+            <script src="{% static 'patience/js/consistency.js' %}"></script>
         {% endif %}
     {% endif %}
 {% endblock %}

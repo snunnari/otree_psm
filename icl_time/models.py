@@ -68,7 +68,7 @@ class Player(BasePlayer):
             if self.choice == 'A':
                 self.participant.vars['icl_time_sure_payoffs'].append(
                     self.participant.vars['icl_time_sure_payoffs'][self.round_number - 1]
-                    + Constants.delta / 2 ** (self.round_number - 1)
+                    + Constants.delta / 2 ** (self.round_number - 1) + 2.75 / 2 ** (self.round_number - 1)
                 )
                 print(self.participant.vars['icl_time_sure_payoffs'])
             elif self.choice == 'B':
