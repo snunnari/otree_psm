@@ -9,6 +9,7 @@ class Altruism(Page):
 
     def vars_for_template(self):
         return dict(
+            endowment_str="{:,}".format(Constants.endowment),
             endowment=Constants.endowment,
             part_index=self.participant.vars['part_index']
         )

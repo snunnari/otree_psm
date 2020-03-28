@@ -93,4 +93,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

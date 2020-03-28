@@ -25,12 +25,13 @@ class Constants(BaseConstants):
     stranger_cost = 20
     cheap_present = 5
     expensive_present = 30
+    currency = '€'
 
     # responses
     responses = [
-        'No present', 'The present worth 5 Euro', 'The present worth 10 Euro',
-        'The present worth 15 Euro', 'The present worth 20 Euro',
-        'The present worth 25 Euro', 'The present worth 30 Euro']
+        'No present', 'The present worth €5', 'The present worth €10',
+        'The present worth €15', 'The present worth €20',
+        'The present worth €25', 'The present worth €30']
 
     n = len(responses)
     # numerical value of the response
@@ -73,4 +74,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

@@ -1,5 +1,7 @@
 {% extends "global/Page.html" %}
 {% load otree static %}
+{% load i18n %}
+
 
 {% block styles %}
     <link href="{% static 'altruism_hypothetical/css/style_altruism.css' %}" rel="stylesheet">
@@ -13,8 +15,8 @@
 
 <div class="wrapper">
 <p>
-   Imagine the following situation: Today you unexpectedly received {{ endowment }} Euro.
-   How much of this amount would you donate to a good cause? (Values between 0 and {{ endowment }} are allowed.)
+   Imagine the following situation: Today you unexpectedly received €{{ endowment_str }}.
+   How much of this amount would you donate to a good cause? (Integers between 0 and {{ endowment }} are allowed.)
 </p>
 </div>
 
