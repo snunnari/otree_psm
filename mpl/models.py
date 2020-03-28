@@ -145,7 +145,6 @@ class Player(BasePlayer):
                     self.payoff = Constants.lottery_hi
                 else:
                     self.payoff = Constants.lottery_lo
-                print(self.random_draw)
             else:
                 self.payoff = Constants.null_payoff
         else:

@@ -88,7 +88,6 @@ class Decision(Page):
         # unzip indices and form fields from <mpl_choices> list
         round_number = self.subsession.round_number
         form_fields = [list(t) for t in zip(*self.participant.vars['mpl_choices'])][1]
-        print(form_fields)
         indices = [list(t) for t in zip(*self.participant.vars['mpl_choices'])][0]
         index = indices[round_number - 1]
 
