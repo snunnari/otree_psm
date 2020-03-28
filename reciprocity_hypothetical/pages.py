@@ -5,7 +5,7 @@ from .models import Constants
 
 class Reciprocity(Page):
     form_model = 'player'
-    form_fields = ['reciprocity_hypothetical']
+    form_fields = ['reciprocity']
 
     def vars_for_template(self):
         return dict(

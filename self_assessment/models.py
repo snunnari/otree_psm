@@ -9,8 +9,14 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
+    # number of levels
+    n = 10
+
     # Levels of scale for self-assessment
-    levels = [str(j) for j in range(10 + 1)]
+    levels = [str(j) for j in range(n + 1)]
+
+    # Choices
+    choices = [[str(j), ''] for j in range(n + 1)]
 
 
 class Subsession(BaseSubsession):
@@ -31,20 +37,14 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     favor_return = models.StringField(
-            choices=[
-                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-            ],
+            choices=Constants.choices,
             label="""
             When someone does me a favor I am willing to return it. 
             """,
             widget=widgets.RadioSelect)
 
     unjust_revenge = models.StringField(
-            choices=[
-                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-            ],
+            choices=Constants.choices,
             label="""
             If I am treated very unjustly, I will take revenge at the first occasion, 
             even if there is a cost to do so.  
@@ -52,20 +52,14 @@ class Player(BasePlayer):
             widget=widgets.RadioSelect)
 
     people_best_intent = models.StringField(
-            choices=[
-                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-            ],
+            choices=Constants.choices,
             label="""
             I assume that people have only the best intentions. 
             """,
             widget=widgets.RadioSelect)
 
     risk_assessment = models.StringField(
-            choices=[
-                ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-                ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-            ],
+            choices=Constants.choices,
             label="""
             In general, how willing or unwilling are you to take risks?
             """,

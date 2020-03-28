@@ -29,8 +29,8 @@
 {% block content %}
 
 <div class="wrapper instructions">
-<p>
 <h4>Instructions</h4>
+
     {% blocktrans trimmed with p_hi=p_hi hi=hi p_lo=p_lo lo=lo %}
         <p>Suppose you were given the choice between receiving
             a payment <font color="blue"><b> today ({{ today }}) </b></font> or
@@ -46,19 +46,19 @@
     {% endblocktrans %}
 
     {% comment %}
-    <p>
+
         {% blocktrans trimmed with n=Constants.num_choices %}
             If you chose the lottery, a random draw will determine whether the high or low outcome will
             constitute your payoff; otherwise, the sure payment will constitute your payoff.
         {% endblocktrans %}
-    </p>
-    <p>
+
+
         {% blocktrans trimmed with conversionrate=Constants.conversionrate %}
             We will convert Experimental Euros to Euros using the rate {{ conversionrate }} Experimental Euros = 1 Euro.
         {% endblocktrans %}
-    </p>
+
     {% endcomment %}
-</p>
+
 </div>
 
     {% next_button %}

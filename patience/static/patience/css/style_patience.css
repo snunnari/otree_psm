@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h4 {
     text-align: center !important;
-    padding: 20px;
+    padding: 5px;
     padding-top:0;
 }
 
@@ -34,7 +34,7 @@ h4 {
     min-width: 512px;
     max-width: 768px;
     margin: 0 auto 20px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 

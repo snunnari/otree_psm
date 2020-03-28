@@ -8,6 +8,7 @@ def vars_for_all_templates(self):
     return dict(
         part_index=self.participant.vars['part_index'],
         levels=Constants.levels,
+        choices=Constants.choices
     )
 
 

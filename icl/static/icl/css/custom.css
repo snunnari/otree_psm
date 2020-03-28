@@ -2,9 +2,6 @@
 /* *** General *** */
 /* ****************************************************************************************************************** */
 
-h2 {
-    text-align: center !important;
-}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -13,9 +10,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px;
 }
 
+h2 {
+    text-align: center !important;
+}
+
 h4 {
     text-align: center !important;
-    padding: 20px;
+    padding: 5px;
     padding-top:0;
 
 }
