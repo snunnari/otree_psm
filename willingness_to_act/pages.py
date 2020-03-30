@@ -11,7 +11,8 @@ class WillingnessToAct(Page):
     def vars_for_template(self):
         return dict(
             levels=Constants.levels,
-            part_index=self.participant.vars['part_index']
+            part_index=self.participant.vars['part_index'],
+            choices=Constants.choices,
         )
 
     def before_next_page(self):

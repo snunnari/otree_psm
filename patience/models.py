@@ -37,8 +37,6 @@ class Subsession(BaseSubsession):
                 # create list of payments in 12 months
                 original_list = Constants.original_list.copy()
                 p.participant.vars['list_payments'] = original_list
-                print(len(indices))
-                print(p.participant.vars['list_payments'])
 
                 if not Constants.use_original_list:
 
@@ -52,8 +50,6 @@ class Subsession(BaseSubsession):
                         list_payments.append(round(payment12, 1))
 
                     p.participant.vars['list_payments'] = list_payments
-                    print(p.participant.vars['list_payments'])
-                    print(len(p.participant.vars['list_payments']))
 
                 # create list corresponding to form_field variables including all choices
                 # ----------------------------------------------------------------------------------------------------
@@ -176,4 +172,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

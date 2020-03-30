@@ -25,8 +25,8 @@
 {% block content %}
 
 <div class="wrapper instructions">
+    <h4>Instructions</h4>
     <p>
-        <h4>Instructions</h4>
         {% blocktrans trimmed with n=num_choices c=currency p=payment|floatformat:2 p1=payment1|floatformat:2 p2=payment2|floatformat:2  p3=payment3|floatformat:2 mp=max_payment|floatformat:2 %}
         On the following screen you will see {{ n }} hypothetical scenarios.
         In each scenario you can choose between a payment that you would receive today and a payment that you
@@ -51,10 +51,9 @@
     </p>
     <p>
         To simplify your task, you will only have to select the point in which you switch your selection
-        from the payment today to the payment in 12 months. To do this, you only need to click on the payment in 12 months
-        in the scenario in which you want to switch, and click on the payment today in the scenario before that.
+        from the payment today to the payment in 12 months.
+        To do this, you only need to click on the payment in 12 months in the scenario in which you want to switch.
         Mind that you can revise your decision for as long as you want before submitting it.
-        That is, you can change the switching point until you are satisfied.
     </p>
 
     {% endif %}

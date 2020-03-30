@@ -9,8 +9,14 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
+    # number of levels
+    n = 10
+
     # Levels of scale for willingness to act
-    levels = [str(j) for j in range(10 + 1)]
+    levels = [str(j) for j in range(n + 1)]
+
+    # Choices
+    choices = [[str(j), ''] for j in range(n + 1)]
 
 
 class Subsession(BaseSubsession):
@@ -31,10 +37,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
 
     forego_future = models.StringField(
-        choices=[
-            ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-            ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-        ],
+        choices=Constants.choices,
         label="""
         How willing are you to give up something that is beneficial for you today 
         in order to benefit more from that in the future?
@@ -42,10 +45,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
 
     punish_unfair = models.StringField(
-        choices=[
-            ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-            ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-        ],
+        choices=Constants.choices,
         label="""
         How willing are you to punish someone who treats you unfairly, 
         even if there may be costs for you? 
@@ -53,10 +53,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
 
     punish_unfair_others = models.StringField(
-        choices=[
-            ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-            ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-        ],
+        choices=Constants.choices,
         label="""
         How willing are you to punish someone who treats others unfairly, 
         even if there may be costs for you? 
@@ -64,10 +61,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelect)
 
     give_free = models.StringField(
-        choices=[
-            ['0', ''], ['1', ''], ['2', ''], ['3', ''], ['4', ''], ['5', ''],
-            ['6', ''], ['7', ''], ['8', ''], ['9', ''], ['10', '']
-        ],
+        choices=Constants.choices,
         label="""
         How willing are you to give to good causes without expecting anything in return?
         """,
@@ -76,4 +70,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

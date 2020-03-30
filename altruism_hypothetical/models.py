@@ -22,7 +22,7 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
-    endowment = 1000
+    endowment = 1_000
 
 
 class Subsession(BaseSubsession):
@@ -50,5 +50,5 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1
 

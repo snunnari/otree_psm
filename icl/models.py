@@ -21,6 +21,7 @@ class Subsession(BaseSubsession):
     # initiate list of sure payoffs and implied switching row in first round
     # ------------------------------------------------------------------------------------------------------------
     def creating_session(self):
+
         if self.round_number == 1:
             for p in self.get_players():
                 p.participant.vars['icl_sure_payoffs'] = [Constants.sure_payoff]
@@ -138,4 +139,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

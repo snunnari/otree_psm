@@ -24,47 +24,24 @@ class Introduction(Page):
 
     form_model = 'player'
 
-    def before_next_page(self):
-        return self.player.compute_endowment()
-
-
-class Question1(Page):
-
-    form_model = 'player'
-    form_fields = ['transfer1']
-
-    def vars_for_template(self):
-        return dict(
-            other_endowment=self.participant.vars['other_endowment'],
-            final_endowment=self.participant.vars['final_endowment'],
-            other_transfer=self.participant.vars['other_transfer']
-        )
+    # only display instruction in round 1
+    # ----------------------------------------------------------------------------------------------------------------
+    def is_displayed(self):
+        return self.subsession.round_number == 1
 
     def before_next_page(self):
-        print(self.subsession.round_number)
-        return self.player.increase_other_transfer(), self.player.compute_endowment()
+        return self.player.compute_endowment(),
 
 
-class Question2(Page):
-
-    form_model = 'player'
-    form_fields = ['transfer2']
-
-    def vars_for_template(self):
-        return dict(
-            other_endowment=self.participant.vars['other_endowment'],
-            final_endowment=self.participant.vars['final_endowment'],
-            other_transfer=self.participant.vars['other_transfer']
-        )
-
-    def before_next_page(self):
-        return self.player.increase_other_transfer(), self.player.compute_endowment()
-
-
-class Question3(Page):
+class Trust(Page):
 
     form_model = 'player'
-    form_fields = ['transfer3']
+    form_fields = ['transfer']
+
+    # only display from round 1 to 4
+    # ----------------------------------------------------------------------------------------------------------------
+    def is_displayed(self):
+        return self.subsession.round_number <= Constants.num_rounds - 1
 
     def vars_for_template(self):
         return dict(
@@ -77,33 +54,18 @@ class Question3(Page):
         return self.player.increase_other_transfer(), self.player.compute_endowment()
 
 
-class Question4(Page):
+class Reciprocity(Page):
 
     form_model = 'player'
-    form_fields = ['transfer4']
+    form_fields = ['transfer']
 
-    def vars_for_template(self):
-        return dict(
-            other_endowment=self.participant.vars['other_endowment'],
-            final_endowment=self.participant.vars['final_endowment'],
-            other_transfer=self.participant.vars['other_transfer'],
-        )
-
-    def before_next_page(self):
-        return self.player.increase_other_transfer(), self.player.compute_endowment(),
-
-
-class Question5(Page):
-
-    form_model = 'player'
-    form_fields = ['transfer5']
+    # only display instruction in round 5
+    # ----------------------------------------------------------------------------------------------------------------
+    def is_displayed(self):
+        return self.subsession.round_number == Constants.num_rounds
 
     def before_next_page(self):
         return self.player.update_part_index()
 
 
-page_sequence = [Introduction,
-                 Question1, Question2, Question3, Question4,
-                 Question5]
-
-#page_sequence.append(Question5)
+page_sequence = [Introduction, Trust, Reciprocity]

@@ -145,7 +145,6 @@ class Player(BasePlayer):
                     self.payoff = Constants.lottery_hi
                 else:
                     self.payoff = Constants.lottery_lo
-                print(self.random_draw)
             else:
                 self.payoff = Constants.null_payoff
         else:
@@ -188,4 +187,4 @@ class Player(BasePlayer):
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):
-        self.participant.vars['part_index'] = self.participant.vars['part_index'] + 1
+        self.participant.vars['part_index'] += 1

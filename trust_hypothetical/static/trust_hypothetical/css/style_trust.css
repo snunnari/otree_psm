@@ -15,11 +15,9 @@ h2 {
 
 h4 {
     text-align: center !important;
-    padding: 20px;
+    padding: 5px;
     padding-top:0;
-
 }
-
 
 .otree-body.container {
     max-width:1000px;
@@ -44,6 +42,7 @@ h4 {
     min-width: 800px;
     max-width: 900px;
     margin: 40px auto 20px;
+    font-size: 1.2rem;
 }
 
 .instructions {
