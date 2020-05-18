@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
 {% load staticfiles otree %}
 {% load i18n %}
@@ -7,7 +14,9 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -42,14 +51,17 @@
     {% trans "Your Decision" %}
 {% endblock %}
 
+</head>
+<body>
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
 {% block content %}
 
-    <div class="wrapper">
-
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <!-- Progress Bar -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -73,7 +85,7 @@
         {% if Constants.one_choice_per_page == True and Constants.large_pies == True %}
 
             <div class="card">
-                <table class="table">
+                <table class="table" id="overflow-table">
                     <thead>
                         <tr class="header">
                             <th class="center">{% trans "Option A" %}</th>
@@ -129,10 +141,10 @@
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %} -->
-                            <th class="lottery">{% trans "Lottery" %}</th>
+                            <th class="lottery" style="text-align:center;">{% trans "Lottery" %}</th>
                             <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
-                            <th class="formfield"></th>
-                            <th class="safe-payment">{% trans "Safe Payment" %}</th>
+                            <th class="formfield" id="formfield-sm"></th>
+                            <th class="safe-payment" style="text-align:center;">{% trans "Safe Payment" %}</th>
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %}-->
@@ -152,7 +164,7 @@
                                 <td class="formfield" style="border-right: 2px solid #dee2e6;">
                                     <input type="radio" name="{{ f }}" value="A" required>
                                 </td>
-                                <td>
+                                <td class="formfield">
                                     <input type="radio" name="{{ f }}" value="B" required>
                                 </td>
 
@@ -165,11 +177,14 @@
                     </tbody>
                 </table>
             </div>
-
+        </div>
+    </div>
         {% next_button %}
 
     {% endif %}
 
-</div>
+  </div>
 
 {% endblock %}
+</body>
+</html>

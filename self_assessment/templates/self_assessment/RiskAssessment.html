@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
 {% load otree %}
 
@@ -6,6 +13,8 @@
 {# ****************************************************************************************************************** #}
 
 {% block styles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{% static 'self_assessment/css/style_assess.css' %}" rel="stylesheet">
 {% endblock %}
 
@@ -18,13 +27,16 @@
     Part {{ part_index }} - Question 2
 {% endblock %}
 
+</head>
+<body>
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
+<div class="container">
+<div class="row">
 
 {% block content %}
-<div class="wrapper">
     <p>
         Please tell me, in general, how willing or unwilling you are to take risks.
         Please use a scale from 0 to 10, where 0 means “completely unwilling to take risks”
@@ -35,11 +47,14 @@
 </div>
 <br/>
 
+<div class="row">
+
+<div id="overflow-table">
 <table class="table" style="margin-bottom:0px">
 <thead>
 
 {# Wording of level 0 and 10 of the scale #}
-<tr style="border-top-style:hidden; border-left-style:hidden; border-right-style:hidden;">
+<tr id="scale-row">
     <th style="border-right: 1px solid #dee2e6;">
     </th>
 
@@ -78,7 +93,12 @@
     </tr>
     {% endfor %}
 </table>
+</div>
+</div>
 
 {% next_button %}
 
 {% endblock %}
+</div>
+</body>
+</html>

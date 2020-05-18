@@ -21,6 +21,23 @@ h2 {
     text-align:center;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    }
+
+div {
+  margin: 1.5em;
+}
+
+div p {
+	margin-bottom: 1em;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: $headings-margin-bottom;
@@ -34,17 +51,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper, .alert {
-    min-width: 800px;
+    /*min-width: 800px; */
     max-width: 900px;
     margin: 40px auto 20px;
     font-size: 1.2rem;
 }
 
-.form-check-input, label {
+div label {
     position: relative;
-    margin-top: 0rem;
-    margin-left: 0rem;
-    margin-bottom: 0rem;
+    margin: auto;
+}
+
+div input[type=radio]{
+  position: relative;
+  margin: auto;
 }
 
 .table>thead>tr>td {
@@ -74,44 +94,56 @@ table>tbody,
     border: 1px solid #dee2e6;
     }
 
-.table th {
-    font-weight: normal;
-    }
-
-.table td {
-    font-weight: normal;
-    }
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-    }
-
 .table td, .table th {
     padding: .5rem;
     vertical-align: inherit; /* from the sassy css */
     border-top: 1px solid #dee2e6;
-
+    font-weight:normal;
     }
 
 .table thead th {
     vertical-align: bottom;
     border-bottom: 1px solid #dee2e6;
     margin-bottom: 0px;
+    max-width:50px;
+    padding: 0.1rem;
+    padding-left:0.2rem;
     }
 
 .scale-left {
     text-align:start;
     font-size: small;
+    font-weight:normal;
     border-left-style:hidden;
-    max-width:50px;
-    padding-left:0.1rem;
+    max-width:45px;
+    padding: 0.1rem;
+    padding-left:0.5rem;
     }
 
 .scale-right {
     text-align:end;
     font-size: small;
-    max-width:50px;
+    max-width:45px;
     padding-right:0.1rem;
     }
+
+table tbody th {
+  min-width: 180px;
+}
+
+#scale-row {
+  border-top-style:hidden;
+  border-left-style:hidden;
+  border-right-style:hidden;
+}
+
+
+#overflow-table {
+  margin:1.5em;
+}
+
+@media screen and (max-width: 850px) {
+  #overflow-table {
+    overflow-x:scroll;
+  }
+}

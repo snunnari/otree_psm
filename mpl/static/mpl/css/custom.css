@@ -2,6 +2,9 @@
 /* *** General *** */
 /* ****************************************************************************************************************** */
 
+body {
+  font-size: 1.2rem;
+}
 h2 {
     text-align: center !important;
 }
@@ -30,12 +33,12 @@ h4 {
     display: inherit;
 }
 
-.wrapper, .alert {
+/* .wrapper, .alert {
     min-width: 512px;
     max-width: 768px;
     margin: 0 auto 20px;
     font-size: 1.2rem;
-}
+} */
 
 
 /* ****************************************************************************************************************** */
@@ -81,7 +84,7 @@ h4 {
 }
 
 .pie-chart {
-    min-width: 40px;
+    /* min-width: 40px; */
     margin: 0 auto;
 }
 
@@ -90,17 +93,19 @@ h4 {
 }
 
 .formfield {
-    min-width: 80px;
+    /* min-width: 80px; */
     text-align: center;
 }
 
 .lottery {
-    min-width: 300px;
+    /* min-width: 280px; */
+    max-width: 145px;
     text-align: right;
 }
 
 .safe-payment {
-    min-width: 300px;
+    /* min-width: 240px; */
+    max-width: 145px;
     text-align: left;
 }
 
@@ -161,3 +166,38 @@ p {
     margin-bottom: 1rem;
     text-align: justify;
     }
+
+#overflow-table {
+  margin:1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  #overflow-table {
+    overflow-x:scroll;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .formfield {
+    max-width: 60px;
+
+  }
+
+  .table>thead>tr>th, .table>tbody>tr>td {
+    padding: 0.4em;
+  }
+
+  .lottery {
+    max-width: 110px;
+  }
+
+  .safe-payment {
+    max-width: 110px;
+  }
+
+  input[type="radio"]{
+      margin: 0px;
+      /* margin-left:25px; */
+      /* margin-right:25px; */
+  }
+}
