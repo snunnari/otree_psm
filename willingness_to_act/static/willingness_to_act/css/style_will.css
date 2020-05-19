@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper, .alert {
-    min-width: 800px;
+    /* min-width: 800px; */
     max-width: 900px;
     margin: 40px auto 20px;
     font-size: 1.2rem;
@@ -83,10 +83,12 @@ table>tbody,
     }
 
 p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-    }
+  font-size: 1.1rem;
+  margin: 2rem;
+  margin-top: 0;
+    /* margin-bottom: 1.2rem; */
+  text-align: justify;
+}
 
 .table td, .table th {
     padding: .5rem;
@@ -114,3 +116,30 @@ p {
     max-width:50px;
     padding-right:0.1rem;
     }
+
+table tbody th {
+  min-width: 180px;
+}
+
+#scale-row {
+  border-top-style:hidden;
+  border-left-style:hidden;
+  border-right-style:hidden;
+}
+
+
+#overflow-table {
+  margin:1.5em;
+}
+
+@media screen and (max-width: 850px) {
+  #overflow-table {
+    overflow-x:scroll;
+  }
+
+  p {
+    margin: 1rem;
+    margin-top: 0;
+      }
+
+}

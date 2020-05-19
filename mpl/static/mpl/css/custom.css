@@ -3,10 +3,11 @@
 /* ****************************************************************************************************************** */
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+
 h2 {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,27 +18,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h4 {
-    text-align: center !important;
-    padding: 5px;
-    padding-top:0;
+  text-align: center !important;
+  padding: 5px;
+  padding-top:0;
 }
 
 .page-header {
-    margin: 40px 0 40px;
-    padding: 0;
-    border-bottom: none;
+  margin: 40px 0 40px;
+  padding: 0;
+  border-bottom: none;
 }
 
 .otree-btn-next {
-    margin: 40px auto;
-    display: inherit;
+  margin: 40px auto;
+  display: inherit;
 }
 
 /* .wrapper, .alert {
-    min-width: 512px;
-    max-width: 768px;
-    margin: 0 auto 20px;
-    font-size: 1.2rem;
+  min-width: 512px;
+  max-width: 768px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
 } */
 
 
@@ -50,22 +51,26 @@ h4 {
 	height: 100%;
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
-    padding: 20px 20px 10px 20px;
-    font-size: 1.2rem;
+  padding: 20px 20px 10px 20px;
+  font-size: 1.2rem;
 
-    position:relative;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
-       -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
+  position:relative;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
+     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.05) inset;
 
-    -moz-border-radius: 5px;
-         border-radius: 5px;
+  -moz-border-radius: 5px;
+       border-radius: 5px;
 }
 
 
 /* ****************************************************************************************************************** */
 /* *** Decision/Results Table *** */
 /* ****************************************************************************************************************** */
+.card {
+  max-width: 600px;
+  margin: auto;
+}
 
 .table {
     margin-bottom: 0;
@@ -73,71 +78,71 @@ h4 {
 
 .table>thead>tr>th,
 .table>tbody>tr>td {
-    padding: 10px;
-    vertical-align: middle;
-    border: none;
+  padding: 10px;
+  vertical-align: middle;
+  border: none;
 }
 
 .header {
-    background-color: #e9e9e9;
-    border: 1px solid #dee2e6;
+  background-color: #e9e9e9;
+  border: 1px solid #dee2e6;
 }
 
 .pie-chart {
-    /* min-width: 40px; */
-    margin: 0 auto;
+  /* min-width: 40px; */
+  margin: 0 auto;
 }
 
 .highcharts-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .formfield {
-    /* min-width: 80px; */
-    text-align: center;
+  width: 5%;
+  text-align: center;
 }
 
 .lottery {
-    /* min-width: 280px; */
-    max-width: 145px;
-    text-align: right;
+  /* min-width: 280px; */
+  text-align: right;
+  width:35%;
 }
 
 .safe-payment {
-    /* min-width: 240px; */
-    max-width: 145px;
-    text-align: left;
+  /* min-width: 240px; */
+  text-align: left;
+  width:35%;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .info {
-    padding: 15px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  padding: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 
 .btn-primary {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-success[disabled], .btn-primary[disabled] {
-    opacity: 1;
+  opacity: 1;
 }
 
 input[type="radio"]{
-    margin: 0px;
-    margin-left:25px;
-    margin-right:25px;
+  margin: 0px;
+  margin-left:0;
+  margin-right:0;
 }
 
 .panel {
-    border: 0.5pt solid #e3e3e3;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    margin: 25px 0;
+  border: 0.5pt solid #e3e3e3;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin: 25px 0;
 }
 
 
@@ -146,58 +151,23 @@ input[type="radio"]{
 /* ****************************************************************************************************************** */
 
 .progress {
-    height: 15px;
-    margin-bottom: 30px;
+  height: 15px;
+  margin-bottom: 30px;
 }
 
 .progress-bar {
-    background-color: rgba(43, 102, 154, 0.20);
-    background-image: linear-gradient(to bottom, rgba(43, 102, 154, 0.1) 0, rgba(43, 102, 154, 0.6) 100%);
-    background-repeat: repeat-x;
+  background-color: rgba(43, 102, 154, 0.20);
+  background-image: linear-gradient(to bottom, rgba(43, 102, 154, 0.1) 0, rgba(43, 102, 154, 0.6) 100%);
+  background-repeat: repeat-x;
 }
 
 label {
-    font-weight: normal;
-    margin-bottom: 4pt;
+  font-weight: normal;
+  margin-bottom: 4pt;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-    }
-
-#overflow-table {
-  margin:1.5em;
-}
-
-@media screen and (max-width: 768px) {
-  #overflow-table {
-    overflow-x:scroll;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .formfield {
-    max-width: 60px;
-
-  }
-
-  .table>thead>tr>th, .table>tbody>tr>td {
-    padding: 0.4em;
-  }
-
-  .lottery {
-    max-width: 110px;
-  }
-
-  .safe-payment {
-    max-width: 110px;
-  }
-
-  input[type="radio"]{
-      margin: 0px;
-      /* margin-left:25px; */
-      /* margin-right:25px; */
-  }
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: justify;
 }

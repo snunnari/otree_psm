@@ -21,6 +21,11 @@ h4 {
 
 }
 
+body {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0px;
@@ -46,7 +51,8 @@ h4 {
 /* ****************************************************************************************************************** */
 
 .instructions {
-	width: 100%;
+	/* width: 100%; */
+  max-width: 768px;
 	height: 100%;
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
@@ -68,6 +74,12 @@ h4 {
 /* *** Decision/Results Table *** */
 /* ****************************************************************************************************************** */
 
+.card {
+  min-width: 60%;
+  max-width: 600px;
+  margin: auto;
+}
+
 .card-header {
     padding: 15px;
     font-weight: 600;
@@ -80,9 +92,13 @@ h4 {
 .table>tbody>tr>th,
 .table>tbody>tr>td {
     vertical-align: middle;
-    padding: 15px;
-    height: 65px;
-    min-width: 100px;
+    padding: 0.5em;
+    height: 70px;
+    min-width: 110px;
+}
+
+.formfield-td {
+  max-width: 50px;
 }
 
 .info {
@@ -121,4 +137,21 @@ input[type="radio"]{
 label {
     font-weight: normal;
     margin-bottom: 4pt;
+}
+
+@media screen and (max-width: 425px) {
+  .table>tbody>tr>th {
+    padding: 0.4em;
+    min-width: 95px;
+  }
+
+  .table>tbody>tr>td {
+      padding: 0.4em;
+      min-width: 45px;
+  }
+
+  .formfield-td {
+    max-width: 50px;
+  }
+
 }
