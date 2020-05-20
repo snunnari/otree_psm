@@ -1,29 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
-{% load otree static %}
+{% load staticfiles otree %}
 {% load i18n %}
 
+
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block title %}
     Part {{ part_index }} - Question {{ page }}
 {% endblock %}
 
+</head>
+<body>
+
 {% block content %}
 
-<div class="wrapper">
+<div class="container">
 <p>
     Finally, a different question:
     assume you were in the position of the other person and had to decide which amount to transfer.
-    Which amount would you transfer?
+    Which amount would you transfer? (Integers between 0 and {{ endowment }} are allowed.)
 </p>
 
     {% formfields %}
-</div>
 
     {% next_button %}
 
-{% include instructions %}
+    {% include instructions %}
 
 {% endblock %}
+</div>

@@ -1,8 +1,22 @@
-{% extends "global/Page.html" %}
-{% load otree static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
 
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+{% load i18n %}
+
+
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'reciprocity_hypothetical/css/style_reciprocity.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'reciprocity_hypothetical/css/style_reciprocity.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -12,7 +26,7 @@
 
 {% block content %}
 
-<div class="wrapper">
+<div class="container">
 <p>
     Please think about what you would do in the following situation.
     You are in an area you are not familiar with, and you realize you lost your way.

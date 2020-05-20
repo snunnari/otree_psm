@@ -89,16 +89,24 @@ body {
     margin-bottom: 0;
 }
 
-.table>tbody>tr>th,
-.table>tbody>tr>td {
+.table>tbody>tr>th {
     vertical-align: middle;
     padding: 0.5em;
     height: 70px;
-    min-width: 110px;
+    width: 35%;
+    /* min-width: 110px; */
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+  padding: 0.5em;
+  height: 70px;
+  width:50%;
 }
 
 .formfield-td {
-  max-width: 50px;
+  /* max-width: 50px; */
+  width: 15%;
 }
 
 .info {

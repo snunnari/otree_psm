@@ -1,28 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
-{% load otree static %}
+{% load staticfiles otree %}
 {% load i18n %}
 
 
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'altruism_hypothetical/css/style_altruism.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'altruism_hypothetical/css/style_altruism.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block title %}
     Part {{ part_index }}
 {% endblock %}
 
+</head>
+<body>
+  
 {% block content %}
 
-<div class="wrapper">
+<div class="container">
 <p>
    Imagine the following situation: Today you unexpectedly received €{{ endowment_str }}.
    How much of this amount would you donate to a good cause? (Integers between 0 and {{ endowment }} are allowed.)
 </p>
-</div>
 
     {% formfields %}
 
     {% next_button %}
-
+</div>
 
 {% endblock %}
