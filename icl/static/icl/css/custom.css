@@ -139,7 +139,7 @@ label {
     margin-bottom: 4pt;
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
   .table>tbody>tr>th {
     padding: 0.4em;
     min-width: 95px;
@@ -154,4 +154,4 @@ label {
     max-width: 50px;
   }
 
-}
+} */

@@ -82,7 +82,7 @@ class Constants(BaseConstants):
     # show results page summarizing the task's outcome including payoff information
     # if <results = True>, a separate page containing all relevant information is displayed after finishing the task
     # if <results = False>, the template "Results.html" will not be rendered
-    results = True
+    results = False
 
     # null payoff (if results is false and the task is not incentive compatible)
     null_payoff = 0

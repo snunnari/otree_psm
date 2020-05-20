@@ -85,7 +85,7 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
         {% if Constants.one_choice_per_page == True and Constants.large_pies == True %}
 
             <div class="card">
-                <table class="table" id="overflow-table">
+                <table class="table">
                     <thead>
                         <tr class="header">
                             <th class="center">{% trans "Option A" %}</th>
@@ -141,10 +141,10 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %} -->
-                            <th class="lottery-th" style="text-align:center;" colspan="2">{% trans "Lottery" %}</th>
+                            <th style="text-align:center;" colspan="2">{% trans "Lottery" %}</th>
                             <!-- <th class="formfield" style="border-right: 2px solid #dee2e6;"></th> -->
                             <!-- <th class="formfield" id="formfield-sm"></th> -->
-                            <th class="safe-payment-th" style="text-align:center;" colspan="2">{% trans "Safe Payment" %}</th>
+                            <th style="text-align:center;" colspan="2">{% trans "Safe Payment" %}</th>
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %}-->

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
 {% load staticfiles otree %}
 {% load i18n %}
@@ -7,9 +14,10 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{% static 'patience/css/style_patience.css' %}" rel="stylesheet">
 {% endblock %}
-
 
 
 {# ****************************************************************************************************************** #}
@@ -39,13 +47,16 @@
     {% trans "Your Decision" %}
 {% endblock %}
 
+</head>
+<body>
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
 {% block content %}
 
-    <div class="wrapper">
+  <div class="container">
+    <div class="row">
 
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <!-- Progress Bar -->
@@ -62,10 +73,6 @@
                 </div>
             </div>
         {% endif %}
-
-        <p id="text1"></p>
-        <p id="text2"></p>
-
 
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <!-- Lottery Decisions: Large Pies -->
@@ -126,10 +133,10 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="header">
-                            <th class="lottery">{% trans "Payment today" %}</th>
-                            <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
-                            <th class="formfield"></th>
-                            <th class="safe-payment">{% trans "Payment in 12 months" %}</th>
+                            <th class="payment-th" colspan="2">{% trans "Payment today" %}</th>
+                            <!-- <th class="formfield" style="border-right: 2px solid #dee2e6;"></th> -->
+                            <!-- <th class="formfield"></th> -->
+                            <th class="payment-th" colspan="2">{% trans "Payment in 12 months" %}</th>
                         </tr>
                     </thead>
 
@@ -158,11 +165,13 @@
                     </tbody>
                 </table>
             </div>
+          </div>
+        </div>
 
         {% next_button %}
 
     {% endif %}
 
-</div>
+
 
 {% endblock %}
