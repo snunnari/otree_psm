@@ -114,21 +114,22 @@ p {
 .payment-th {
   width:50%;
   text-align: center;
+  /* white-space: nowrap; */
 }
 
 .formfield {
     /* min-width: 80px; */
-    width:5%;
+    width:15%;
     text-align: center;
 }
 
 .lottery {
-    width: 45%;
+    width: 35%;
     text-align: right;
 }
 
 .safe-payment {
-    width: 45%;
+    width: 35%;
     text-align: left;
 }
 
