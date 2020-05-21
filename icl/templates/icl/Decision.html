@@ -43,11 +43,13 @@
         <!-- Progress Bar -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
         {% if Constants.progress_bar == True %}
-            <label>
-                {% blocktrans trimmed with page=page total=total %}
-                    Page {{ page }} of {{ total }}
-                {% endblocktrans %}
-            </label>
+            <div class="card" style="border:none;">
+              <label>
+                  {% blocktrans trimmed with page=page total=total %}
+                      Page {{ page }} of {{ total }}
+                  {% endblocktrans %}
+              </label>
+            </div>
             <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:{{ progress|json }}%;">
                     <span class="sr-only"></span>

@@ -19,6 +19,10 @@ h4 {
     padding-top:0;
 }
 
+body {
+  font-size: 1.1rem;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0px;
@@ -30,12 +34,12 @@ h4 {
     display: inherit;
 }
 
-.wrapper, .alert {
+/* .wrapper, .alert {
     min-width: 500px;
     max-width: 600px;
     margin: 0 auto 20px;
     font-size: 1.2rem;
-}
+} */
 
 
 /* ****************************************************************************************************************** */
@@ -43,7 +47,8 @@ h4 {
 /* ****************************************************************************************************************** */
 
 .instructions {
-	width: 100%;
+	/* width: 100%; */
+  max-width: 768px;
 	height: 100%;
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
@@ -65,6 +70,12 @@ h4 {
 /* *** Decision/Results Table *** */
 /* ****************************************************************************************************************** */
 
+.card {
+  min-width: 60%;
+  max-width: 600px;
+  margin: auto;
+}
+
 .card-header {
     padding: 15px;
     font-weight: 600;
@@ -74,12 +85,26 @@ h4 {
     margin-bottom: 0;
 }
 
-.table>tbody>tr>th,
-.table>tbody>tr>td {
+.table>tbody>tr>th {
     vertical-align: middle;
-    padding: 15px;
-    height: 65px;
-    min-width: 100px;
+    padding: 0.5em;
+    height: 70px;
+    width: 30%;
+    text-align: center;
+    /* min-width: 110px; */
+}
+
+.table>tbody>tr>td {
+  vertical-align: middle;
+  padding: 0.5em;
+  height: 70px;
+  width:55%;
+}
+
+.formfield-td {
+  /* max-width: 50px; */
+  width: 15%;
+  text-align: center;
 }
 
 .info {
@@ -106,7 +131,10 @@ input[type="radio"]{
 
 .progress {
     height: 15px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 3em;
 }
 
 .progress-bar {

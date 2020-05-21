@@ -64,7 +64,7 @@ class Player(BasePlayer):
     # create function to determine maximum amount the participant can transfer at each of the five questions
     # ------------------------------------------------------------------------------------------------------------------
     def transfer_max(self):
-        print(self.round_number)
+        #print(self.round_number)
         if self.round_number < 5:
             return self.participant.vars['final_endowment']
         else:

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/icl/static/icl/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/icl/static/icl/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/static/mpl/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/static/mpl/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/patience/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/static/patience/css/style_patience.css" beforeDir="false" afterPath="$PROJECT_DIR$/patience/static/patience/css/style_patience.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/templates/patience/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience/templates/patience/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/templates/patience/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience/templates/patience/Instructions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/templates/patience/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience/templates/patience/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
