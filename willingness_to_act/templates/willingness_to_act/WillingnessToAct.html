@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-
 {% extends "global/Page.html" %}
 {% load otree %}
 
@@ -13,8 +6,6 @@
 {# ****************************************************************************************************************** #}
 
 {% block styles %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="{% static 'willingness_to_act/css/style_will.css' %}" rel="stylesheet">
 {% endblock %}
 
@@ -27,17 +18,14 @@
     Part {{ part_index }}
 {% endblock %}
 
-</head>
-<body>
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
-<div class="container">
-<div class="row">
 
 {% block content %}
 
+<div class="container">
     <p>
         We now ask for your willingness to act in a certain way in four different areas.
         Please indicate your answer on a scale from 0 to 10,
@@ -46,9 +34,7 @@
         like 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
     </p>
 </div>
-<br/>
 
-<div class="row">
   <div id="overflow-table">
   <table class="table" style="margin-bottom:0px">
   <thead>
@@ -94,12 +80,8 @@
       {% endfor %}
   </table>
 </div>
+
+    {% next_button %}
+
+    {% endblock %}
 </div>
-
-
-{% next_button %}
-
-{% endblock %}
-</div>
-</body>
-</html>

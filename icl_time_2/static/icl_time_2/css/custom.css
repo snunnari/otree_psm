@@ -13,11 +13,22 @@ h1, h2, h3, h4, h5, h6 {
   padding: 25px;
 }
 
+body {
+font-size: 1.1rem;
+}
+
 h4 {
     text-align: center !important;
     padding: 5px;
     padding-top:0;
 
+}
+
+p {
+    text-align: justify;
+    padding: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .page-header {
@@ -50,7 +61,7 @@ h4 {
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
     padding: 20px 20px 10px 20px;
-    font-size: 1.2rem;
+    font-size: inherit;
     text-align: justify;
 
     position:relative;

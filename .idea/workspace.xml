@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mpl/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/static/icl/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/icl/static/icl/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/templates/icl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl/templates/icl/Decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl/templates/icl/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl/templates/icl/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl/templates/icl/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/static/icl_time/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/static/icl_time/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/templates/icl_time/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/templates/icl_time/Decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time/templates/icl_time/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time/templates/icl_time/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time_2/static/icl_time_2/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time_2/static/icl_time_2/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icl_time_2/templates/icl_time_2/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/icl_time_2/templates/icl_time_2/Decision.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Instructions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/mpl/templates/mpl/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/negative_reciprocity/static/negative_reciprocity/css/style_negrec.css" beforeDir="false" afterPath="$PROJECT_DIR$/negative_reciprocity/static/negative_reciprocity/css/style_negrec.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/patience/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patience/templates/patience/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience/templates/patience/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patience/templates/patience/Results.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience/templates/patience/Results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" beforeDir="false" afterPath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/RiskAssessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/templates/self_assessment/SelfAssessment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Instructions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Introduction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Reciprocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Reciprocity.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Trust.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Trust.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +62,13 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ChangesTree.GroupingKeys" value="directory" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/otree_collective_attention" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -228,13 +251,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -291,11 +313,11 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="553" y="204" key="RollbackChangesDialog/0.0.1504.963@0.0.1504.963" timestamp="1584980060902" />
-    <state x="254" y="124" key="SettingsEditor" timestamp="1584811772394">
+    <state x="254" y="124" key="SettingsEditor" timestamp="1590158909131">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="254" y="124" key="SettingsEditor/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625286404" />
-    <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1584811772394" />
+    <state x="254" y="124" key="SettingsEditor/0.0.1504.963@0.0.1504.963" timestamp="1590158909131" />
     <state x="540" y="198" key="VCS.ChangeListViewerDialog" timestamp="1589818156701">
       <screen x="0" y="0" width="1504" height="963" />
     </state>

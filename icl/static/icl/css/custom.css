@@ -25,6 +25,13 @@ body {
   /* text-align: justify; */
 }
 
+p {
+    text-align: justify;
+    padding: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0px;
@@ -32,8 +39,12 @@ body {
 }
 
 .otree-btn-next {
-    margin: 40px auto;
+    margin: 2rem auto;
     display: inherit;
+}
+
+.container {
+  max-width: 768px;
 }
 
 /* .wrapper, .alert {
@@ -51,10 +62,10 @@ body {
 
 .instructions {
 	/* width: 100%; */
-  max-width: 768px;
+    max-width: 768px;
 	/* height: 100%; */
-	background: rgba(255,255,245,0.25);
-	margin: 40px auto;
+    background: rgba(255,255,245,0.25);
+    margin: 40px auto;
     padding: 20px 20px 10px 20px;
     font-size: 1.1rem;
     text-align: justify;
@@ -151,7 +162,11 @@ label {
     margin-bottom: 4pt;
 }
 
-/* @media screen and (max-width: 425px) {
+#overflow-table {
+  margin:1.5em;
+}
+
+ @media screen and (max-width: 425px) {
   .table>tbody>tr>th {
     padding: 0.4em;
     min-width: 95px;
@@ -166,4 +181,4 @@ label {
     max-width: 50px;
   }
 
-} */
+}
