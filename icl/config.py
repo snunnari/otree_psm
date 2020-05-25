@@ -66,7 +66,7 @@ class Constants(BaseConstants):
     # if <progress_bar = False>, no information with respect to the advance within the task is displayed
     # the progress bar graphically depicts the advance within the task in terms of how many decision have been made
     # further, information in terms of "page x out of <num_choices>" (with x denoting the current choice) is provided
-    progress_bar = False
+    progress_bar = True
 
     # show instructions page
     # if <instructions = True>, a separate template "Instructions.html" is rendered prior to the task

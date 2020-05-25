@@ -7,9 +7,8 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet">
+  <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet">
 {% endblock %}
-
 
 
 {# ****************************************************************************************************************** #}
@@ -48,8 +47,9 @@
 {# ****************************************************************************************************************** #}
 {% block content %}
 
-    <div class="wrapper">
-
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <!-- Progress Bar -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -129,10 +129,10 @@
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %} -->
-                            <th class="lottery">{% trans "Lottery" %}</th>
-                            <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
-                            <th class="formfield"></th>
-                            <th class="safe-payment">{% trans "Safe Payment" %}</th>
+                            <th style="text-align:center; border-right: 2px solid #dee2e6;" colspan="2">{% trans "Lottery" %}</th>
+                            <!-- <th class="formfield" style="border-right: 2px solid #dee2e6;"></th> -->
+                            <!-- <th class="formfield" id="formfield-sm"></th> -->
+                            <th style="text-align:center;" colspan="2">{% trans "Safe Payment" %}</th>
                             <!--{% if Constants.small_pies == True %}
                                 <th class="pie-chart"></th>
                             {% endif %}-->
@@ -152,7 +152,7 @@
                                 <td class="formfield" style="border-right: 2px solid #dee2e6;">
                                     <input type="radio" name="{{ f }}" value="A" required>
                                 </td>
-                                <td>
+                                <td class="formfield">
                                     <input type="radio" name="{{ f }}" value="B" required>
                                 </td>
 
@@ -165,11 +165,13 @@
                     </tbody>
                 </table>
             </div>
-
+        </div>
+    </div>
         {% next_button %}
 
     {% endif %}
 
-</div>
+  </div>
 
 {% endblock %}
+

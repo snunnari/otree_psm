@@ -7,7 +7,7 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'icl/css/custom.css' %}" rel="stylesheet">
+  <link href="{% static 'icl/css/custom.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -15,7 +15,7 @@
 {# *** TITLE *** #}
 {# ****************************************************************************************************************** #}
 {% block title %}
-    {% trans "Results" %}
+    {% trans "Your Decision" %}
 {% endblock %}
 
 
@@ -24,7 +24,9 @@
 {# ****************************************************************************************************************** #}
 {% block content %}
 
-    <div class="wrapper">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
 
         <div class="card info">
             {% blocktrans %}
@@ -172,8 +174,9 @@
             {% endblocktrans %}
         </div>
 
-    </div>
 
     {% next_button %}
 
 {% endblock %}
+</div>
+</div>

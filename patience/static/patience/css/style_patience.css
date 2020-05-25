@@ -19,6 +19,11 @@ h4 {
     padding-top:0;
 }
 
+body {
+  margin: auto;
+  font-size: 1.1rem;
+}
+
 .page-header {
     margin: 40px 0 40px;
     padding: 0;
@@ -37,13 +42,24 @@ h4 {
     font-size: 1.2rem;
 }
 
+label {
+    font-weight: normal;
+    margin-bottom: 4pt;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+    }
 
 /* ****************************************************************************************************************** */
 /* *** Instructions *** */
 /* ****************************************************************************************************************** */
 
 .instructions {
-	width: 100%;
+  max-width: 768px;
+  /* width: 100%; */
 	height: 100%;
 	background: rgba(255,255,245,0.25);
 	margin: 40px auto;
@@ -63,6 +79,21 @@ h4 {
 /* ****************************************************************************************************************** */
 /* *** Decision/Results Table *** */
 /* ****************************************************************************************************************** */
+.card {
+  margin: auto;
+  max-width:500px;
+}
+
+.info {
+    padding: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    /* max-width:600px; */
+}
+
+.header {
+    background-color: #e9e9e9;
+    border: 1px solid #dee2e6;
+}
 
 .table {
     margin-bottom: 0;
@@ -80,27 +111,25 @@ h4 {
     border: 1px solid #dee2e6;
 }
 
-.pie-chart {
-    min-width: 40px;
-    margin: 0 auto;
-}
-
-.highcharts-container {
-    margin: 0 auto;
+.payment-th {
+  width:50%;
+  text-align: center;
+  /* white-space: nowrap; */
 }
 
 .formfield {
-    min-width: 80px;
+    /* min-width: 80px; */
+    width:15%;
     text-align: center;
 }
 
 .lottery {
-    min-width: 300px;
+    width: 35%;
     text-align: right;
 }
 
 .safe-payment {
-    min-width: 300px;
+    width: 35%;
     text-align: left;
 }
 
@@ -123,8 +152,8 @@ h4 {
 
 input[type="radio"]{
     margin: 0px;
-    margin-left:25px;
-    margin-right:25px;
+    /* margin-left:25px; */
+    /* margin-right:25px; */
 }
 
 .panel {
@@ -150,14 +179,3 @@ input[type="radio"]{
     background-image: linear-gradient(to bottom, rgba(43, 102, 154, 0.1) 0, rgba(43, 102, 154, 0.6) 100%);
     background-repeat: repeat-x;
 }
-
-label {
-    font-weight: normal;
-    margin-bottom: 4pt;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-    }

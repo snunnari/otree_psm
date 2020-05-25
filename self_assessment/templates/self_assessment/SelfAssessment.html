@@ -24,7 +24,7 @@
 {# ****************************************************************************************************************** #}
 
 {% block content %}
-<div class="wrapper">
+<div class="container">
     <p>
         How well do the following statements describe you as a person?
         Please indicate your answer on a scale from 0 to 10.
@@ -33,13 +33,13 @@
         like 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
     </p>
 </div>
-<br/>
 
-<table class="table" style="margin-bottom:0px">
+<div id="overflow-table">
+<table class="table" style="margin-bottom:0px;">
 <thead>
 
 {# Wording of level 0 and 10 of the scale #}
-<tr style="border-top-style:hidden; border-left-style:hidden; border-right-style:hidden;">
+<tr id="scale-row">
     <th style="border-right: 1px solid #dee2e6;">
     </th>
 
@@ -78,7 +78,9 @@
     </tr>
     {% endfor %}
 </table>
+</div>
 
 {% next_button %}
 
 {% endblock %}
+

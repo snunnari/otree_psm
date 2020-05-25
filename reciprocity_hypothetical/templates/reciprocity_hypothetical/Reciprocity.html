@@ -1,8 +1,13 @@
 {% extends "global/Page.html" %}
-{% load otree static %}
+{% load staticfiles otree %}
+{% load i18n %}
 
+
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'reciprocity_hypothetical/css/style_reciprocity.css' %}" rel="stylesheet">
+  <link href="{% static 'reciprocity_hypothetical/css/style_reciprocity.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -12,7 +17,7 @@
 
 {% block content %}
 
-<div class="wrapper">
+<div class="container">
 <p>
     Please think about what you would do in the following situation.
     You are in an area you are not familiar with, and you realize you lost your way.
@@ -34,6 +39,6 @@
     {% formfields %}
 
     {% next_button %}
-</div>
 
+</div>
 {% endblock %}

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+
 {% extends "global/Page.html" %}
 {% load staticfiles otree %}
 {% load i18n %}
@@ -7,7 +14,9 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'patience/css/custom.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'patience/css/style_patience.css' %}" rel="stylesheet">
 {% endblock %}
 
 
@@ -33,13 +42,16 @@
     {% trans "Results" %}
 {% endblock %}
 
+</head>
+<body>
 
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
 {% block content %}
-
-    <div class="wrapper">
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
 
         <div class="card info">
             {% blocktrans trimmed %}
@@ -111,7 +123,6 @@
             </div>
 -->
 
-
         <!-- ------------------------------------------------------------------------------------------------------- -->
         <!-- Choice To Pay: Choice List -->
         <!-- ------------------------------------------------------------------------------------------------------- -->
@@ -121,10 +132,10 @@
                 <table class="table table-striped">
                     <thead>
                         <tr class="header">
-                            <th class="lottery">{% trans "Payment today" %}</th>
-                            <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
-                            <th class="formfield"></th>
-                            <th class="safe-payment">{% trans "Payment in 12 months" %}</th>
+                            <th class="payment-th" style="border-right: 2px solid #dee2e6;" colspan="2">{% trans "Payment today" %}</th>
+                            <!-- <th class="formfield" style="border-right: 2px solid #dee2e6;"></th>
+                            <th class="formfield"></th> -->
+                            <th class="payment-th" colspan="2">{% trans "Payment in 12 months" %}</th>
                         </tr>
                     </thead>
 
@@ -137,14 +148,13 @@
                                 </td>
 
                                 <!-- radio select form fields -->
-
                                 {% if option_to_pay == 'A' %}
                                 <td class="formfield" style="border-right: 2px solid #dee2e6;">
                                     <div class="controls">
                                         <input type="radio" style="pointer-events: none;" checked="checked">
                                     </div>
                                 </td>
-                                <td>
+                                <td class="formfield">
                                     <div class="controls">
                                         <input type="radio" style="pointer-events: none;">
                                     </div>
@@ -155,7 +165,7 @@
                                         <input type="radio" style="pointer-events: none;">
                                     </div>
                                 </td>
-                                <td>
+                                <td class="formfield">
                                     <div class="controls">
                                         <input type="radio" style="pointer-events: none;" checked="checked">
                                     </div>
@@ -188,7 +198,8 @@
         </div>
 
     </div>
-
+  </div>
     {% next_button %}
 
 {% endblock %}
+</div>

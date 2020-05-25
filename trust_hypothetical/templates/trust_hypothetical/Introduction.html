@@ -1,19 +1,28 @@
 {% extends "global/Page.html" %}
-{% load otree static %}
+{% load staticfiles otree %}
 {% load i18n %}
 
+
+{# ****************************************************************************************************************** #}
+{# *** STYLES *** #}
+{# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
+  <link href="{% static 'trust_hypothetical/css/style_trust.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block title %}
     Part {{ part_index }}
 {% endblock %}
 
+
+<div class="container">
+
 {% block content %}
 
-{% include instructions %}
+  {% include instructions %}
 
-    {% next_button %}
+  {% next_button %}
 
 {% endblock %}
+
+</div>

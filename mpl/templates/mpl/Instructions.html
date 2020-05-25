@@ -7,7 +7,7 @@
 {# *** STYLES *** #}
 {# ****************************************************************************************************************** #}
 {% block styles %}
-    <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet"/>
+  <link href="{% static 'mpl/css/custom.css' %}" rel="stylesheet"/>
 {% endblock %}
 
 
@@ -22,9 +22,13 @@
 {# ****************************************************************************************************************** #}
 {# *** CONTENT *** #}
 {# ****************************************************************************************************************** #}
+
+<div class="container">
+<div class="row">
+
 {% block content %}
 
-    <div class="wrapper instructions">
+    <div class="instructions">
         <h4>Instructions</h4>
         <p>
             {% blocktrans trimmed with n=num_choices %}
@@ -79,6 +83,10 @@
 
     </div>
 
-    {% next_button %}
 
-{% endblock %}
+    {% next_button %}
+  </div>
+  </div>
+
+    {% endblock %}
+
