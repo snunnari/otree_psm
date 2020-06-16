@@ -25,7 +25,11 @@
 
     {% if Constants.enforce_consistency == True %}
         {% if Constants.one_choice_per_page == False and Constants.random_order == False %}
-            <script src="{% static 'patience/js/double_consistency.js' %}"></script>
+            {% if Constants.single_click == True %}
+            <script src="{% static 'mpl/js/single_click.js' %}"></script>
+            {% else %}
+            <script src="{% static 'mpl/js/consistency.js' %}"></script>
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endblock %}

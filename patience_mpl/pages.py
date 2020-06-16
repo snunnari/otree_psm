@@ -35,7 +35,6 @@ class Instructions(Page):
             'payment2': self.participant.vars['list_payments'][1],
             'payment3': self.participant.vars['list_payments'][2],
             'max_payment': self.participant.vars['list_payments'][-1],
-            'enforce_consistency': Constants.enforce_consistency
         }
 
 

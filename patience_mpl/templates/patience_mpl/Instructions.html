@@ -54,7 +54,7 @@
         {% endblocktrans %}
     </p>
 
-    {% if enforce_consistency %}
+    {% if Constants.enforce_consistency %}
     <p>
         Since the payment in 12 months gets better and better in each scenario,
         you should switch from the payment today to the payment in 12 months only once.
@@ -64,18 +64,38 @@
         In other words, the scenario in which you accept the payment in 12 months will mark
         the point where you stop to choose the payment today and you begin to choose the payment in 12 months.
     </p>
+
     <p>
-        To simplify your task, you will only have to select the point in which you switch your selection
-        from the payment today to the payment in 12 months.
-        To do this, you only need to click on the payment in 12 months in the scenario in which you want to switch.
-        Mind that you can revise your decision for as long as you want before submitting it.
+        Following this idea, the experiment comes with a feature that, once you select the payment today
+        or a lottery the payment in 12 months,
+        automatically checks all the remaining payments for you.
     </p>
+        {% if Constants.single_click %}
+        <p>
+            In particular, once you select a payment in 12 months, the feature will automatically check
+            all the payment in 12 months that follow the one you selected and, at the same time,
+            all the payments today that precede the payment in 12 months you selected.
+            In other words, as you click on a payment in 12 months,
+            this feature will select for you all the payments in 12 months below and all the payments today above.
+            This means that you will only have to select the point in which you want to switch your selection
+            from the payment today to the payment in 12 months.
+        </p>
+        {% else %}
+        <p>
+            In particular, once you select a payment in 12 months, the feature will automatically check
+            all the payment in 12 months that follow the one you selected.
+            Likewise, once you select a payment today, the feature will automatically check all the payments today
+            that precede the one you selected.
+            This means that you only need to select a payment in 12 months and the payment that precedes it.
+        </p>
+
+        {% endif %}
+
+    <p>Mind that you can revise your decision for as long as you want before submitting it.</p>
 
     {% endif %}
 
-    <p>
-        Please, indicate the scenario where you choose the payment in 12 months over the payment today.
-    </p>
+    <p>Please, indicate the scenario where you choose the payment in 12 months over the payment today.</p>
 
     {% if results %}
     <p>

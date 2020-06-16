@@ -50,6 +50,7 @@ class Constants(BaseConstants):
     # but also all options "A" above the selected option "B" are automatically checked.
     # In other words, the participant is required to click only once.
     single_click = True
+
     # ---------------------------------------------------------------------------------------------------------------
 
     # show each lottery pair on a separate page
