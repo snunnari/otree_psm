@@ -39,7 +39,7 @@ SESSION_CONFIGS = [
     # ------------------------------------------------------------------------------------------------------------------
     {
         'name': 'willingness_to_act',
-        'display_name': "Module 1: Patience Qual + Neg Reciprocity Qual 1 + Neg Reciprocity Qual 2 + Altruism Qual",
+        'display_name': "Module 1: Patience Qual + Neg Recipr Qual 1 + Neg Recipr Qual 2 + Altruism Qual",
         'num_demo_participants': 1,
         'app_sequence': ['willingness_to_act'],
     },
@@ -51,7 +51,7 @@ SESSION_CONFIGS = [
     },
     {
         'name': 'self_assessment',
-        'display_name': "Module 3: Pos Reciprocity Qual + Neg Reciprocity Qual 3 + Trust Qual",
+        'display_name': "Module 3: Pos Recipr Qual + Neg Recipr Qual 3 + Trust Qual",
         'num_demo_participants': 1,
         'app_sequence': ['self_assessment'],
     },
@@ -87,7 +87,7 @@ SESSION_CONFIGS = [
     },
     {
         'name': 'pos_reciprocity',
-        'display_name': "Module 6: Positive Reciprocity Quant 1",
+        'display_name': "Module 6: Positive Recipr Quant 1",
         'num_demo_participants': 1,
         'app_sequence': ['pos_reciprocity'],
     },
@@ -99,13 +99,13 @@ SESSION_CONFIGS = [
     },
     {
         'name': 'trust_hypothetical',
-        'display_name': "Module 8: Pos Reciprocity Quant 2 + Trust Quant (Trust Game)",
+        'display_name': "Module 8: Pos Recipr Quant 2 + Trust Quant (Trust Game)",
         'num_demo_participants': 1,
         'app_sequence': ['trust_hypothetical'],
     },
     {
         'name': 'ultimatum_hypothetical',
-        'display_name': "Module 9: Neg Reciprocity Quant (Ultimatum Game)",
+        'display_name': "Module 9: Neg Recipr Quant (Ultimatum Game)",
         'num_demo_participants': 1,
         'app_sequence': ['ultimatum_hypothetical'],
     },
