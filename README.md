@@ -1,6 +1,8 @@
 # oTree App for Preference Survey Module
-#### Salvatore Nunnari, Bocconi University, salvatore.nunnari@unibocconi.it
-#### Luca Congiu, Bocconi University, luca.congiu@unibocconi.it
+
+**Authors:**
+Salvatore Nunnari, Bocconi University, salvatore.nunnari@unibocconi.it
+Luca Congiu, Bocconi University & University of Insubria, lcongiu@uninsubria.it
 
 This repository contains oTree apps to implement two versions of the Preference Survey Module:
 
