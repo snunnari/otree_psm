@@ -1,8 +1,6 @@
 # oTree App for Preference Survey Module
 
----
-
-**Authors:**
+### Authors
 
 Salvatore Nunnari, Bocconi University, salvatore.nunnari@unibocconi.it
 
