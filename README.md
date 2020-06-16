@@ -6,6 +6,8 @@ Salvatore Nunnari, Bocconi University, salvatore.nunnari@unibocconi.it
 
 Luca Congiu, Bocconi University & University of Insubria, lcongiu@uninsubria.it
 
+---
+
 This repository contains oTree apps to implement two versions of the Preference Survey Module:
 
 * **Preference Survey Module, Laboratory Version**: an experimentally validated survey to measure six key economic preferences (risk aversion, patience, trust, altruism, positive and negative reciprocity) in a reliable, parsimonious and cost-effective way introduced by Falk, Armin, Anke Becker, Thomas Dohmen, David Huffman, and Uwe Sunde (2016), "The Preference Survey Module: A Validated Instrument for Measuring Risk, Time, and Social Preferences", IZA Discussion Paper No. 9674.
