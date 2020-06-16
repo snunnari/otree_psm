@@ -36,6 +36,22 @@ class Constants(BaseConstants):
     # --- Overall Settings and Appearance --- #
     # ---------------------------------------------------------------------------------------------------------------- #
 
+    # Consistency (single switching point)
+    # ---------------------------------------------------------------------------------------------------------------
+    # Enforce consistency, i.e. only allow for a single switching point
+    # if <enforce_consistency = True>, all options "A" above a selected option "A" are automatically selected
+    # similarly, all options "B" below a selected option "B" are automatically checked, implying consistent choices
+    # note that <enforce_consistency> is only implemented if <one_choice_per_page = False> and <random_order = False>
+    enforce_consistency = True
+
+    # Single click
+    # if <enforce_consistency = True> and <single_click = True>, when a participant selects option "B" at a certain row,
+    # not only all options "B" below the selected option "B" are automatically checked (as in enforce_consistency),
+    # but also all options "A" above the selected option "B" are automatically checked.
+    # In other words, the participant is required to click only once.
+    single_click = True
+    # ---------------------------------------------------------------------------------------------------------------
+
     # show each lottery pair on a separate page
     # if <one_choice_per_page = True>, each single binary choice is shown on a separate page
     # if <one_choice_per_page = False>, all <num_choices> choices are displayed in a table on one page
@@ -45,12 +61,6 @@ class Constants(BaseConstants):
     # if <random_order = True>, the ordering of binary decisions is randomized for display
     # if <random_order = False>, binary choices are listed in ascending order of the probability of the "high" outcome
     random_order = False
-
-    # enforce consistency, i.e. only allow for a single switching point
-    # if <enforce_consistency = True>, all options "A" above a selected option "A" are automatically selected
-    # similarly, all options "B" below a selected option "B" are automatically checked, implying consistent choices
-    # note that <enforce_consistency> is only implemented if <one_choice_per_page = False> and <random_order = False>
-    enforce_consistency = True
 
     # depict probabilities as percentage numbers
     # if <percentage = True>, the probability of outcome "high" will be displayed as percentage number, i.e. "50%"

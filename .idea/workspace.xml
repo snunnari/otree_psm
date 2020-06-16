@@ -3,22 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_static/global/style_psm.css" beforeDir="false" afterPath="$PROJECT_DIR$/_static/global/style_psm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_templates/global/Page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_templates/global/Page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/static/altruism_hypothetical/css/style_altruism.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" beforeDir="false" afterPath="$PROJECT_DIR$/altruism_hypothetical/templates/altruism_hypothetical/Altruism.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/negative_reciprocity/static/negative_reciprocity/css/style_negrec.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/negative_reciprocity/templates/negative_reciprocity/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/static/reciprocity_hypothetical/css/style_reciprocity.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/reciprocity_hypothetical/templates/reciprocity_hypothetical/Reciprocity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" beforeDir="false" afterPath="$PROJECT_DIR$/self_assessment/static/self_assessment/css/style_assess.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trust_hypothetical/static/trust_hypothetical/css/style_trust.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Instructions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Introduction.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Introduction.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Reciprocity.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Reciprocity.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Trust.html" beforeDir="false" afterPath="$PROJECT_DIR$/trust_hypothetical/templates/trust_hypothetical/Trust.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/static/willingness_to_act/css/style_will.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" beforeDir="false" afterPath="$PROJECT_DIR$/willingness_to_act/templates/willingness_to_act/WillingnessToAct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk_mpl/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/risk_mpl/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk_mpl/static/mpl/js/double_consistency.js" beforeDir="false" afterPath="$PROJECT_DIR$/risk_mpl/static/mpl/js/single_click.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Instructions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,10 +267,11 @@
     </state>
     <state x="345" y="140" key="#Notifications/0.0.1504.963/2256.0.1920.1040@0.0.1504.963" timestamp="1584625211875" />
     <state x="345" y="140" key="#Notifications/0.0.1504.963@0.0.1504.963" timestamp="1589818163627" />
-    <state x="483" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585040057890">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state x="617" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592335033858">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="483" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1585040057890" />
+    <state x="617" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592335033858" />
     <state x="409" y="76" width="870" height="871" key="CommitChangelistDialog2" timestamp="1590165598209">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
