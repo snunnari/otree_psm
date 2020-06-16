@@ -3,6 +3,11 @@ from otree.api import (
     Currency as c, currency_range
 )
 
+author = 'Luca Congiu & Salvatore Nunnari (Bocconi University)'
+
+doc = """
+Questions to Measure "Patience Qualitative" + "Negative Reciprocity Qualitative 1" + "Negative Reciprocity Qualitative 2" + "Altruism Qualitative" in Preference Survey Module
+"""
 
 class Constants(BaseConstants):
     name_in_url = 'willingness_to_act'

@@ -16,22 +16,22 @@ SESSION_CONFIGS = [
     # main Apps
     # ------------------------------------------------------------------------------------------------------------------
     {
-        'name': 'PSM_Streamlined_version',
-        'display_name': "Preference Survey Module - Streamlined Version",
+        'name': 'PSM_Streamlined',
+        'display_name': "Preference Survey Module, Streamlined Version (Global Preference Survey)",
         'num_demo_participants': 1,
         'app_sequence': [
-            'icl_time', 'self_assessment', 'icl', 'reciprocity_hypothetical',
-            'willingness_to_act', 'altruism_hypothetical'
+            'risk_qual', 'risk_staircase', 'willingness_to_act', 'patience_staircase',
+            'self_assessment', 'dictator_hypothetical', 'pos_reciprocity'
              ],
     },
     {
-        'name': 'PSM_Lab_version',
-        'display_name': "Preference Survey Module - Lab Version",
+        'name': 'PSM_Laboratory',
+        'display_name': "Preference Survey Module, Laboratory Version",
         'num_demo_participants': 1,
         'app_sequence': [
-            'self_assessment', 'mpl', 'willingness_to_act', 'patience',
-            'trust_hypothetical', 'altruism_hypothetical', 'reciprocity_hypothetical',
-            'negative_reciprocity'
+            'risk_qual', 'risk_mpl', 'willingness_to_act', 'patience_mpl',
+            'trust_hypothetical', 'self_assessment', 'dictator_hypothetical',
+            'pos_reciprocity', 'ultimatum_hypothetical'
         ],
     },
 
@@ -39,69 +39,75 @@ SESSION_CONFIGS = [
     # ------------------------------------------------------------------------------------------------------------------
     {
         'name': 'willingness_to_act',
-        'display_name': "Willingness-To-Act Questions",
+        'display_name': "Module 1: Patience Qual + Neg Reciprocity Qual 1 + Neg Reciprocity Qual 2 + Altruism Qual",
         'num_demo_participants': 1,
         'app_sequence': ['willingness_to_act'],
     },
     {
+        'name': 'risk_qual',
+        'display_name': "Module 2: Risk Aversion Qual",
+        'num_demo_participants': 1,
+        'app_sequence': ['risk_qual'],
+    },
+    {
         'name': 'self_assessment',
-        'display_name': "Self-Assessment Questions",
+        'display_name': "Module 3: Pos Reciprocity Qual + Neg Reciprocity Qual 3 + Trust Qual",
         'num_demo_participants': 1,
         'app_sequence': ['self_assessment'],
     },
     {
-        'name': 'icl',
-        'display_name': "Risk Aversion - Staircase Method",
+        'name': 'risk_mpl',
+        'display_name': "Module 4/A: Risk Aversion Quant, Multiple Price List",
         'num_demo_participants': 1,
-        'app_sequence': ['icl'],
+        'app_sequence': ['risk_mpl'],
     },
     {
-        'name': 'mpl',
-        'display_name': "Risk Aversion - Multiple Price List",
+        'name': 'risk_staircase',
+        'display_name': "Module 4/B: Risk Aversion Quant, Staircase Method",
         'num_demo_participants': 1,
-        'app_sequence': ['mpl'],
+        'app_sequence': ['risk_staircase'],
     },
     {
-        'name': 'patience',
-        'display_name': "Patience - Multiple Price List",
+        'name': 'patience_mpl',
+        'display_name': "Module 5/A: Patience Quant (Today vs 12 Months), Multiple Price List",
         'num_demo_participants': 1,
-        'app_sequence': ['patience'],
+        'app_sequence': ['patience_mpl'],
     },
     {
-        'name': 'icl_time',
-        'display_name': "Patience (Today vs. 12 Months) - Staircase Method",
+        'name': 'patience_staircase',
+        'display_name': "Module 5/B: Patience Quant (Today vs 12 Months), Staircase Method",
         'num_demo_participants': 1,
-        'app_sequence': ['icl_time'],
+        'app_sequence': ['patience_staircase'],
     },
     {
-        'name': 'icl_time_2',
-        'display_name': "Patience (12 Months vs. 24 Months) - Staircase Method",
+        'name': 'present_bias_staircase',
+        'display_name': "Module 5/C: Patience Quant (12 Months vs 24 Months), Staircase Method",
         'num_demo_participants': 1,
-        'app_sequence': ['icl_time_2'],
+        'app_sequence': ['present_bias_staircase'],
     },
     {
-        'name': 'reciprocity_hypothetical',
-        'display_name': "Positive Reciprocity Hypothetical Question",
+        'name': 'pos_reciprocity',
+        'display_name': "Module 6: Positive Reciprocity Quant 1",
         'num_demo_participants': 1,
-        'app_sequence': ['reciprocity_hypothetical'],
+        'app_sequence': ['pos_reciprocity'],
     },
     {
-        'name': 'altruism_hypothetical',
-        'display_name': "Altruism Hypothetical Question",
+        'name': 'dictator_hypothetical',
+        'display_name': "Module 7: Altruism Quant (Dictator Game)",
         'num_demo_participants': 1,
-        'app_sequence': ['altruism_hypothetical'],
+        'app_sequence': ['dictator_hypothetical'],
     },
     {
         'name': 'trust_hypothetical',
-        'display_name': "Trust Hypothetical Questions",
+        'display_name': "Module 8: Pos Reciprocity Quant 2 + Trust Quant (Trust Game)",
         'num_demo_participants': 1,
         'app_sequence': ['trust_hypothetical'],
     },
     {
-        'name': 'negative_reciprocity',
-        'display_name': "Negative Reciprocity Hypothetical Question",
+        'name': 'ultimatum_hypothetical',
+        'display_name': "Module 9: Neg Reciprocity Quant (Ultimatum Game)",
         'num_demo_participants': 1,
-        'app_sequence': ['negative_reciprocity'],
+        'app_sequence': ['ultimatum_hypothetical'],
     },
 ]
 

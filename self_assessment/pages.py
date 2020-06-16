@@ -27,5 +27,5 @@ class RiskAssessment(Page):
     
 page_sequence = [
     SelfAssessment,
-    RiskAssessment
+#    RiskAssessment
 ]

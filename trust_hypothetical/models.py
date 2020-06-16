@@ -10,10 +10,10 @@ from otree.api import (
 )
 
 
-author = 'Your name here'
+author = 'Luca Congiu & Salvatore Nunnari (Bocconi University)'
 
 doc = """
-Your app description
+Questions to Measure "Trust Quantative" + "Positive Reciprocity Quantitative" in Preference Survey Module (Hypothetical Trust Game)
 """
 
 

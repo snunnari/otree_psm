@@ -33,7 +33,7 @@ class Introduction(Page):
         return self.player.compute_endowment(),
 
 
-class Trust(Page):
+class Receiver(Page):
 
     form_model = 'player'
     form_fields = ['transfer']
@@ -54,7 +54,7 @@ class Trust(Page):
         return self.player.increase_other_transfer(), self.player.compute_endowment()
 
 
-class Reciprocity(Page):
+class Sender(Page):
 
     form_model = 'player'
     form_fields = ['transfer']
@@ -68,4 +68,4 @@ class Reciprocity(Page):
         return self.player.update_part_index()
 
 
-page_sequence = [Introduction, Trust, Reciprocity]
+page_sequence = [Introduction, Receiver, Sender]
