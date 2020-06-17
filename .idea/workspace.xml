@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4e2c3203-20ab-48fb-8538-85265db0c031" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patience_mpl/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/patience_mpl/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patience_mpl/templates/patience_mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience_mpl/templates/patience_mpl/Decision.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Decision.html" beforeDir="false" afterPath="$PROJECT_DIR$/risk_mpl/templates/risk_mpl/Decision.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patience_mpl/templates/patience_mpl/Instructions.html" beforeDir="false" afterPath="$PROJECT_DIR$/patience_mpl/templates/patience_mpl/Instructions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592338070603</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Single-click switch for risk and patience mpl">
+      <created>1592338491615</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1592338491615</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -286,11 +294,11 @@
     </state>
     <state x="483" y="229" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1585040057890" />
     <state x="617" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592335033858" />
-    <state x="522" y="82" width="870" height="871" key="CommitChangelistDialog2" timestamp="1592338069783">
+    <state x="522" y="82" width="870" height="871" key="CommitChangelistDialog2" timestamp="1592338490910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="409" y="76" width="870" height="871" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1590165598209" />
-    <state x="522" y="82" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592338069783" />
+    <state x="522" y="82" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1592338490910" />
     <state x="144" y="79" width="1203" height="798" key="DiffContextDialog" timestamp="1590511357836">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
@@ -321,11 +329,11 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="540" y="198" key="VCS.ChangeListViewerDialog/0.0.1504.963@0.0.1504.963" timestamp="1589818156701" />
-    <state x="440" y="232" key="Vcs.Push.Dialog.v2" timestamp="1592338073627">
+    <state x="440" y="232" key="Vcs.Push.Dialog.v2" timestamp="1592338493012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="215" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1590165627465" />
-    <state x="440" y="232" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592338073627" />
+    <state x="440" y="232" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592338493012" />
     <state x="562" y="399" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584711827809">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
