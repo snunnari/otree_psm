@@ -90,6 +90,26 @@ class Player(BasePlayer):
         elif self.choice == 'I':
             self.participant.vars['icl_switching_row'] /= 2
 
+    # set final switching row
+    # ----------------------------------------------------------------------------------------------------------------
+    def set_final_switching_row(self):
+
+        current_round = self.subsession.round_number
+        current_choice = self.in_round(current_round).choice
+
+        # set final switching row if all choices have been completed or if "indifferent" was chosen
+        # ------------------------------------------------------------------------------------------------------------
+        if current_round == Constants.num_rounds or current_choice == 'I':
+
+            # randomly determine choice to "pay" (i.e., in which round otree fills in the switching row)
+            # --------------------------------------------------------------------------------------------------------
+            completed_choices = len(self.participant.vars['icl_time_sure_payoffs'])
+            choice_to_pay = random.randint(1, completed_choices)
+
+            # implied switching row
+            # --------------------------------------------------------------------------------------------------------
+            self.in_round(choice_to_pay).switching_row = self.participant.vars['icl_switching_row']
+
     # create function to increase part index by 1 when App changes
     # ------------------------------------------------------------------------------------------------------------------
     def update_part_index(self):

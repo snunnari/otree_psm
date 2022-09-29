@@ -73,6 +73,7 @@ class Decision(Page):
     def before_next_page(self):
         self.player.set_sure_payoffs()
         self.player.update_switching_row()
+        self.player.set_final_switching_row()
         if self.subsession.round_number == Constants.num_choices:
             self.player.update_part_index()
 
