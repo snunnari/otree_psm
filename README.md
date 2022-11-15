@@ -18,6 +18,3 @@ The modules to measure Risk Aversion Quantitative and Patience Quantitative buil
 
 This app was developed with oTree version 2.5.7.
 
----
-
-Demo: https://preference-survey-module.herokuapp.com/demo/
